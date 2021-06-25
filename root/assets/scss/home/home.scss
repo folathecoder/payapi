@@ -1,0 +1,26 @@
+// ===============  AUTOMATICALLY CONVERT PX TO REM
+@function rem($size) {
+    $remSize: $size / 15;
+    @return #{$remSize}rem;
+}
+
+body {
+    background-color: red;
+}
+
+
+// ===============  HEADER SECTION
+
+.header-container {
+    background-color: black;
+}
+.header {
+    background-color: #fff;
+    max-width: rem(1110);
+    min-height: rem(48);
+    margin: rem(40) auto;
+}     
+.header__inner {
+    display: flex;
+
+}

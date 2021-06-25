@@ -1,0 +1,89 @@
+// ===============  AUTOMATICALLY CONVERT PX TO REM
+@function rem($size) {
+    $remSize: $size / 15;
+    @return #{$remSize}rem;
+}
+
+
+// =======================  ROOT SETTINGS
+
+// ===============  COLORS 
+$color-pry-100: hsl(337, 48%, 49%);
+$color-pry-200: hsl(0, 0%, 88%);
+$color-sec-100: hsl(207, 33%, 32%);
+$color-sec-200: hsl(207, 27%, 15%);
+$color-sec-300: hsl(337, 60%, 64%);
+$color-sec-400: hsl(207, 16%, 50%);
+$color-bg: hsl(0, 0%, 95%);
+
+// =======================  TYPOGRAPHY
+
+// ===============  FONT FAMILIY       
+$font-pry: 'DM Serif Display', serif;
+
+// ===============  FONT WEIGHT
+$weight-regular: 400;
+
+// ===============  BASE CSS RESET
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+html:focus-within {
+  scroll-behavior: smooth;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+// =============== MAKE ANIMATION OPTIONAL FOR USERS
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+// =============== MAKE ANIMATION OPTIONAL FOR USERS
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    max-width: 100%;
+    background-color: $color-bg;  
+    font-family: $font-pry;    
+    font-size: rem(15);
+    line-height: rem(28);
+    color: $color-sec-200;
+}
+
+
+
+
+
+
+
+
+
+
+// ===============  HEADER SECTION
