@@ -8,13 +8,17 @@
 // =======================  ROOT SETTINGS
 
 // ===============  COLORS 
-$color-pry-100: hsl(337, 48%, 49%);
-$color-pry-200: hsl(0, 0%, 88%);
-$color-sec-100: hsl(207, 33%, 32%);
-$color-sec-200: hsl(207, 27%, 15%);
-$color-sec-300: hsl(337, 60%, 64%);
-$color-sec-400: hsl(207, 16%, 50%);
-$color-bg: hsl(0, 0%, 95%);
+$color-pry-100: #b9416f;
+$color-pry-200: #e0e0e0;
+$color-sec-100: #37546d;
+$color-sec-200: #1c2731;
+$color-sec-300: #da6c96;
+$color-sec-400: #6b8294;
+$color-bg: #f2f2f2;
+$color-sec-500: #36536B;
+$color-sec-600: #DA6D97;
+$color-sec-700: #1B262F;
+$shadow-btn: rem(0) rem(1) rem(2) rgba(0, 0, 0, 0.267);
 
 // =======================  TYPOGRAPHY
 
@@ -73,8 +77,19 @@ body {
     background-color: $color-bg;  
     font-family: $font-pry;    
     font-size: rem(15);
-    line-height: rem(28);
+    line-height: rem(28 );
     color: $color-sec-200;
+    margin: rem(20);
+}
+
+a {
+    color: $color-sec-500;
+    font-size: rem(15);
+
+    &:hover {
+        transition: 0.5s;
+        color: $color-sec-200;
+    }
 }
 
 
@@ -84,6 +99,197 @@ body {
 
 
 
-
-
 // ===============  HEADER SECTION
+
+.header-container {
+    // background-color: black;
+    top: 0;
+    max-width: 100%;
+}
+.header {
+    // background-color: #fff;
+    max-width: rem(1110);
+    min-height: rem(48);
+    margin: rem(0) auto;
+    padding-top: rem(40);
+}     
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    flex: 1;
+
+    img {
+        max-width: rem(135);
+    }
+}
+.header__menu {
+    flex: 6;
+    display: flex;
+    // background-color: yellow;
+    justify-content: space-between;
+    
+    & > * {
+        flex: 1;
+    }
+}
+.menu {
+    display: flex;
+}
+
+.menu__close {
+    display: none;
+}
+.menu-item {
+    margin: 0rem 1rem;
+}
+
+.header__button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    background-color: $color-pry-100;
+    padding: rem(16) rem(26.6);
+    font-size: rem(15);
+    font-weight: bold;
+    border-radius: rem(50);
+    color: $color-pry-200;
+    box-shadow: $shadow-btn;
+
+    &:hover {
+        background-color: #DA6D97;
+        color: $color-bg;
+        transition: all 0.5s linear;
+    }
+}
+
+.mobile__menu {
+    display: none;
+}
+
+.menu__line  {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .menu {
+        flex: 2;
+        // background-color: orange;
+        justify-content: center;
+    }
+
+    .header__button {
+        flex: 1;
+    }
+    
+}
+
+@media (max-width: 746px) {
+
+    .header {
+        padding-top: rem(20);
+    }
+
+    .mobile__menu {
+        display: block;
+
+        button {
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+    .header__logo {
+
+        img {
+            max-width: rem(132);
+        }
+    }
+
+
+    .menu {
+        flex: 2;
+        // background-color: orange;
+        justify-content: center;
+    }
+
+    .menu__close {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: rem(20);
+
+        button {
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+    .deactivate {
+        display: none;
+    }
+
+    .header__menu {
+        position: absolute;
+        background-color: $color-sec-700;
+        top: 0;
+        right: 0;
+        min-height: 100vh;
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .menu {
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: rem(-80);
+
+    }
+
+    .menu-item {
+        padding: rem(10) rem(0);
+        
+        a {
+            color: $color-pry-200;
+        }
+
+        a:hover {
+            color: saturate($color-pry-200, $amount: 50);
+        }
+    }
+
+    .header__button {
+        flex: 6;
+        justify-content: center;
+        align-items: flex-start;
+        margin: rem(40) rem(20);
+        display: block;
+        text-align: center;
+        margin-top: rem(0);
+
+    }
+
+    .dropdown-btn {
+        display: block;
+        padding: rem(10) rem(26.6);
+        max-width: 100%;
+    }
+    .menu__line {
+        display: block;
+    }
+
+    .menu__line hr {
+        border-top: rem(0.2) solid #97979715;
+        width: 85%;
+        margin: rem(25) auto;
+    }
+    
+}
+
+
