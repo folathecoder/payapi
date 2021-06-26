@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/universal/desktop/favicon-32x32.png" />
 
@@ -27,6 +27,12 @@
   <link rel="stylesheet" href="./assets/scss/home/home.css">
 
   <!-- FONT DNS FROM: fonts.google.com -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -35,9 +41,9 @@
 
 <body>
 
+  <!-- START OF HEADER SECTION -->
   <div class="header-container">
     <header class="header">
-
       <div class="header__inner">
         <div class="header__logo">
           <a href="./index.html">
@@ -45,16 +51,13 @@
           </a>
         </div>
         <div class="mobile__menu">
-          <button class="dropdown-open">
+          <button class="dropdown-open" type="button">
             <img src="./assets/img/universal/mobile/menu.svg" alt="">
           </button>
-          <!-- <button class="dropdown-close deactivate">
-            <img src="./assets/img/universal/mobile/close.svg" alt="">
-          </button> -->
         </div>
         <nav class="header__menu">
           <ul class="menu__close">
-            <button class="dropdown-close">
+            <button class="dropdown-close" type="button">
               <img src="./assets/img/universal/mobile/close.svg" alt="">
             </button>
           </ul>
@@ -69,13 +72,13 @@
             <li class="menu-item"><a href="./contact.html">Contact</a></li>
           </ul>
           <ul class="header__button">
-            <li><a href="" class="btn dropdown-btn">Schedule a Demo</a></li>
+            <li><a href="" class="btn dropdown-btn" type="button">Schedule a Demo</a></li>
           </ul>
         </nav>
-
-      </div>                      
+      </div>
     </header>
   </div>
+  <!-- END OF SECTION HEADER -->
 
 
   <!-- Pricing
@@ -124,11 +127,11 @@
     About
     Contact -->
 
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
 
 
-    <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

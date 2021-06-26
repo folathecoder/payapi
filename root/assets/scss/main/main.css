@@ -42,26 +42,29 @@ picture {
             animation-iteration-count: 1 !important;
     -webkit-transition-duration: 0.01ms !important;
             transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  max-width: 100%;
   background-color: #f2f2f2;
-  font-family: "DM Serif Display", serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   line-height: 1.86667rem;
   color: #1c2731;
   margin: 1.33333rem;
-  overflow-x: hidden;
 }
 
 a {
   color: #36536B;
   font-size: 1rem;
+  font-weight: 700;
 }
 
 a:hover {
@@ -144,13 +147,13 @@ a:hover {
 
 .btn {
   background-color: #b9416f;
-  padding: 0.8rem 1.6rem;
+  padding: 0.93333rem 1.6rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 3.33333rem;
   color: #e0e0e0;
-  -webkit-box-shadow: 0rem 0.06667rem 0.13333rem rgba(0, 0, 0, 0.267);
-          box-shadow: 0rem 0.06667rem 0.13333rem rgba(0, 0, 0, 0.267);
+  -webkit-box-shadow: 0rem 0.06667rem 0.13333rem rgba(0, 0, 0, 0.562);
+          box-shadow: 0rem 0.06667rem 0.13333rem rgba(0, 0, 0, 0.562);
 }
 
 .btn:hover {
@@ -265,10 +268,10 @@ a:hover {
     padding: 0.66667rem 0rem;
   }
   .menu-item a {
-    color: #e0e0e0;
+    color: #FBFCFE;
   }
   .menu-item a:hover {
-    color: #f0d1d1;
+    color: #fafcff;
   }
   .header__button {
     -webkit-box-flex: 6;
@@ -294,9 +297,9 @@ a:hover {
     display: block;
   }
   .menu__line hr {
-    border-top: 0.01333rem solid #97979715;
     width: 85%;
     margin: 1.66667rem auto;
+    color: rgba(150, 150, 150, 0.192);
   }
   .menu-active {
     -webkit-transition: 0.5s linear;

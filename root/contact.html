@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
 
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
-  </head>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/universal/desktop/favicon-32x32.png" />
 
-  <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+  <title>Contact | PayAPI</title>
+  <meta name="description" content="Our API comes with just a few lines of code. You’ll be up and running in 
+    no time. We built our documentation page to integrate payments functionality 
+    with ease.">
 
-    Submit a help request and we’ll get in touch shortly.
-    
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
+  <!-- OPEN GRAPH TAGS -->
+  <meta property="og:title" content="PayAPI | Start Building With Our Free APIs" />
+  <meta property="og:description" content="Our API comes with just a few lines of code. You’ll be up and running in 
+    no time. We built our documentation page to integrate payments functionality 
+    with ease." />
+  <meta property="og:url" content="https://folathecoder.github.io/portfolio-V1/" />
+  <meta property="og:image" content="https://folathecoder.github.io/portfolio-V1/images/featured.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-    Join the thousands of innovators already building with us
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="./assets/scss/main/main.css">
 
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
+  <!-- FONT DNS FROM: fonts.google.com -->
 
-    Pricing
-    About
-    Contact
-  </body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- START OF HEADER SECTION -->
+  <div class="header-container">
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./assets/img/universal/desktop/logo.svg" alt="PayAPI Logo">
+          </a>
+        </div>
+        <div class="mobile__menu">
+          <button class="dropdown-open" type="button">
+            <img src="./assets/img/universal/mobile/menu.svg" alt="">
+          </button>
+        </div>
+        <nav class="header__menu">
+          <ul class="menu__close">
+            <button class="dropdown-close" type="button">
+              <img src="./assets/img/universal/mobile/close.svg" alt="">
+            </button>
+          </ul>
+          <ul class="menu__line">
+            <li>
+              <hr>
+            </li>
+          </ul>
+          <ul class="menu">
+            <li class="menu-item"><a href="./pricing.html">Pricing</a></li>
+            <li class="menu-item"><a href="./about.html">About</a></li>
+            <li class="menu-item"><a href="./contact.html">Contact</a></li>
+          </ul>
+          <ul class="header__button">
+            <li><a href="" class="btn dropdown-btn" type="button">Schedule a Demo</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- END OF SECTION HEADER -->
+
+
+  <div class="overlay"></div>
+
+
+
+  <script src="./assets/js/main.js"></script>
+</body>
 
 </html>

@@ -4,7 +4,6 @@
     @return #{$remSize}rem;
 }
 
-
 // =======================  ROOT SETTINGS
 
 // ===============  COLORS 
@@ -18,15 +17,21 @@ $color-bg: #f2f2f2;
 $color-sec-500: #36536B;
 $color-sec-600: #DA6D97;
 $color-sec-700: #1B262F;
-$shadow-btn: rem(0) rem(1) rem(2) rgba(0, 0, 0, 0.267);
+$color-sec-800: #FBFCFE;
+$shadow-btn: rem(0) rem(1) rem(2) rgba(0, 0, 0, 0.562);
 
 // =======================  TYPOGRAPHY
 
 // ===============  FONT FAMILIY       
 $font-pry: 'DM Serif Display', serif;
+$font-sec: 'Public Sans', sans-serif;
 
 // ===============  FONT WEIGHT
 $weight-regular: 400;
+$weight-medium: 500;
+$weight-semi-bold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
 
 // ===============  BASE CSS RESET
 *,
@@ -65,41 +70,38 @@ picture {
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+    //   scroll-behavior: auto !important;
     }
   }
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 // =============== MAKE ANIMATION OPTIONAL FOR USERS
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    max-width: 100%;
     background-color: $color-bg;  
-    font-family: $font-pry;    
+    font-family: $font-sec;    
     font-size: rem(15);
     line-height: rem(28 );
     color: $color-sec-200;
     margin: rem(20);
-    overflow-x: hidden;
 }
 
 a {
     color: $color-sec-500;
     font-size: rem(15);
+    font-weight: $weight-bold;
 
     &:hover {
         transition: 0.5s;
         color: $color-sec-200;
     }
 }
-
-
-
-
-
-
-
-
 // ===============  HEADER SECTION
 
 .header-container {
@@ -153,7 +155,7 @@ a {
 
 .btn {
     background-color: $color-pry-100;
-    padding: rem(12) rem(24);
+    padding: rem(14) rem(24);
     font-size: rem(15);
     font-weight: bold;
     border-radius: rem(50);
@@ -263,11 +265,11 @@ a {
         padding: rem(10) rem(0);
         
         a {
-            color: $color-pry-200;
+            color: $color-sec-800;
         }
 
         a:hover {
-            color: saturate($color-pry-200, $amount: 50);
+            color: saturate($color-sec-800, $amount: 50);
         }
     }
 
@@ -292,9 +294,9 @@ a {
     }
 
     .menu__line hr {
-        border-top: rem(0.2) solid #97979715;
         width: 85%;
         margin: rem(25) auto;
+        color: hsla(0, 0%, 59%, 0.192);
     }
 
     .menu-active {

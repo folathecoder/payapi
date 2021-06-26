@@ -7,6 +7,8 @@ const mobileMenu = document.querySelector('.header__menu');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
 
+
+
 // ============================================================
 //TODO: Mobile navigation menu feature
 
@@ -46,3 +48,6 @@ document.addEventListener('keydown', e => {
     }
 })
 //===========================================================
+
+
+body.style.overflowX = 'hidden';
