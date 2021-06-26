@@ -4,6 +4,40 @@
     @return #{$remSize}rem;
 }
 
+// ===============  MEDIA QUERIES
+@mixin media-query ($size) {
+    @if $size == desktop {
+        @media screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else if $size == tablet {
+        @media screen and (min-width: 992px) {
+            @content;
+        }
+    } 
+    @else if $size == tablet-mini {
+        @media screen and (min-width: 786px) {
+            @content;
+        }
+    } 
+    @else if $size == large-mobile {
+        @media screen and (min-width: 602px) {
+            @content;
+        }
+    } 
+    @else if $size == mobile {
+        @media screen and (min-width: 300px) {
+            @content;
+        }
+    } 
+    @else if $size == mobile-mini {
+      @media screen and (min-width: 300px) {
+          @content;
+      }
+  } 
+  }
+
 // =======================  ROOT SETTINGS
 
 // ===============  COLORS 
@@ -89,7 +123,6 @@ body {
     font-size: rem(15);
     line-height: rem(28 );
     color: $color-sec-200;
-    margin: rem(20);
 }
 
 a {
@@ -105,12 +138,11 @@ a {
 // ===============  HEADER SECTION
 
 .header-container {
-    // background-color: black;
     top: 0;
     max-width: 100%;
+    margin: rem(20);
 }
 .header {
-    // background-color: #fff;
     max-width: rem(1110);
     min-height: rem(48);
     margin: rem(0) auto;
@@ -122,7 +154,6 @@ a {
 }
 .header__logo {
     flex: 1;
-
     img {
         max-width: rem(135);
     }
@@ -130,9 +161,7 @@ a {
 .header__menu {
     flex: 6;
     display: flex;
-    // background-color: yellow;
     justify-content: space-between;
-    
     & > * {
         flex: 1;
     }
@@ -140,19 +169,16 @@ a {
 .menu {
     display: flex;
 }
-
 .menu__close {
     display: none;
 }
 .menu-item {
     margin: 0rem 1rem;
 }
-
 .header__button {
     display: flex;
     justify-content: flex-end;
 }
-
 .btn {
     background-color: $color-pry-100;
     padding: rem(14) rem(24);
@@ -161,84 +187,65 @@ a {
     border-radius: rem(50);
     color: $color-pry-200;
     box-shadow: $shadow-btn;
-
     &:hover {
         background-color: #DA6D97;
         color: $color-bg;
         transition: all 0.5s linear;
     }
 }
-
 .mobile__menu {
     display: none;
 }
-
 .menu__line  {
     display: none;
 }
 
 @media (max-width: 992px) {
-
     .menu {
         flex: 2;
-        // background-color: orange;
         justify-content: center;
     }
-
     .header__button {
         flex: 1;
     }
-    
 }
 
 @media (max-width: 746px) {
-
     .header {
         padding-top: rem(10);
     }
-
     .mobile__menu {
         display: block;
-
         button {
             border: none;
             background-color: transparent;
             cursor: pointer;
         }
     }
-
     .header__logo {
-
         img {
             max-width: rem(132);
         }
     }
-
-
     .menu {
         flex: 2;
-        // background-color: orange;
         justify-content: center;
     }
-
     .menu__close {
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
         margin-right: rem(20);
         margin-top: rem(-8);
-
         button {
             border: none;
             background-color: transparent;
             cursor: pointer;
         }
     }
-
     .deactivate {
         display: none;
     }
-
     .header__menu {
         position: absolute;
         background-color: $color-sec-700;
@@ -251,28 +258,22 @@ a {
         transform: translateX(100%);
         z-index: 100;
     }
-
     .menu {
         flex: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: rem(-80);
-
     }
-
     .menu-item {
         padding: rem(10) rem(0);
-        
         a {
             color: $color-sec-800;
         }
-
         a:hover {
             color: saturate($color-sec-800, $amount: 50);
         }
     }
-
     .header__button {
         flex: 6;
         justify-content: center;
@@ -281,9 +282,7 @@ a {
         display: block;
         text-align: center;
         margin-top: rem(0);
-
     }
-
     .dropdown-btn {
         display: block;
         padding: rem(10) rem(26.6);
@@ -292,18 +291,15 @@ a {
     .menu__line {
         display: block;
     }
-
     .menu__line hr {
         width: 85%;
         margin: rem(25) auto;
-        color: hsla(0, 0%, 59%, 0.192);
+        color: hsla(0, 0%, 1%, 0.267);
     }
-
     .menu-active {
         transition: 0.5s linear;
         transform: translateX(0%);
     }
-
     .overlay {
         display: none;
         position: fixed;
@@ -316,5 +312,153 @@ a {
         background-color:rgba(0, 0, 0, 0.26);
         z-index: 0;
     }
+}
+
+
+.sample {
+    background-color: orange;
+    width: 100%;
+    height: rem(1000);
+}
+
+
+//=============== FOOTER SECTION
+
+.footer {
+    background-color: $color-sec-700;
+    padding: rem(30) rem(0);
+    background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+    background-size: rem(800) auto;
+    background-position: center rem(150);
+    background-repeat: no-repeat;
+
+    @include media-query(large-mobile) {
+        padding: rem(10) rem(0);    
+        display: flex;
+        background-size: rem(500) auto;
+        background-position: rem(500) rem(-100);
+    }
+
+    @include media-query(tablet) {
+        background-position: rem(700) rem(-100);
+    }
+
+    @include media-query(desktop) {
+        background-position: rem(1000) rem(-100);
+    }
+
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: rem(1110);
+        margin: rem(0) auto;
+        padding: rem(0) rem(10);
+
+        @include media-query(large-mobile) {
+            flex: 1;
+            flex-direction: row;
+        }
+    }
+}
+
+.footer__logo {
+    padding: rem(10) rem(0);
+
+    @include media-query(large-mobile) {
+        flex: 1;
+        justify-content: right;
+    }
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(13) rem(0);
+
+    @include media-query(large-mobile) {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    &-item {
+        padding: rem(7) rem(0);
+        @include media-query(large-mobile) {
+            margin: rem(0) rem(20);
+        }
+
+        a {
+            color: $color-sec-800;
+        }
+        a:hover {
+            color: saturate($color-sec-800, $amount: 50);
+        }
+    }
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    padding: rem(13) rem(0);
+
+    @include media-query(large-mobile) {
+        flex: 1;
+        justify-content: right;
+    }
+
+    // img:hover {
+    //     background: linear-gradient(90deg, red, red);
+    //     -webkit-background-clip: text;
+    //     -webkit-text-fill-color: transparent;
+    // }
     
+
+    & > * {
+        margin: rem(0) rem(10);
+    }
+}
+
+.footer__inner-section {
+    @include media-query(large-mobile) {
+        flex: 1;
+    }
+}
+
+.foot-2 {
+    @include media-query(large-mobile) {
+        flex: 2;
+    }
+    @include media-query(tablet) {
+        flex: 5;
+    }
+}
+
+
+//=============== SCROLL UP BUTTON
+
+.scroll-up {
+    height: rem(45);
+    width: rem(45);
+    border-radius: 100%;
+    background-color: $color-pry-100;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: rem(15);
+    box-shadow: $shadow-btn;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    i {
+        font-size: rem(25);
+        color: $color-sec-800;
+    }
+
+    &:hover {
+        background-color: #DA6D97;
+        transition: all 0.5s linear;
+    }
 }

@@ -6,6 +6,10 @@ const closeMenu = document.querySelector('.dropdown-close');
 const mobileMenu = document.querySelector('.header__menu');
 const overlay = document.querySelector('.overlay');
 const body = document.body;
+const scrollUp = document.querySelector('.scroll-up');
+const headerSection = document.querySelector('.header-container');
+
+
 
 
 
@@ -50,4 +54,8 @@ document.addEventListener('keydown', e => {
 //===========================================================
 
 
-body.style.overflowX = 'hidden';
+//TODO: Scroll-Up feature 
+
+scrollUp.addEventListener('click', e => {
+    headerSection.scrollIntoView({behavior: 'smooth'});
+})
