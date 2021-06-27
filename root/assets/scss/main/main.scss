@@ -142,8 +142,8 @@ a {
 }
 
 h1 {
-    font-size: rem(28);
-    line-height: rem(32);
+    font-size: rem(32);
+    line-height: rem(36);
     font-weight: $weight-bold;
     font-family: $font-pry;
     color: $color-sec-500;
@@ -371,10 +371,8 @@ h1 {
 .hero {
     max-width: 100%;
     min-height: rem(0);
-    // background-color: rgb(247, 247, 247);
 
     &__inner {
-        // background-color: red;
         max-width: $max-width;
         margin: rem(0) auto;
         display: flex;
@@ -392,7 +390,6 @@ h1 {
     }
 }
 .hero__content {
-    // background-color: yellow;
     text-align: center;
 }
 
@@ -420,7 +417,7 @@ input[type="email"], input[type="submit"] {
 input[type="email"] {
     background-color: $color-bg;
     padding: rem(0) rem(20);
-    box-shadow: rem(1) rem(2) rem(3) rgba(0, 0, 0, 0.116);
+    box-shadow: rem(0) rem(0) rem(3) rgba(0, 0, 0, 0.116);
     margin: rem(15) rem(0);
     color: $color-sec-500;
 }

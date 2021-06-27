@@ -70,8 +70,8 @@ a:hover {
 }
 
 h1 {
-  font-size: 1.8666666667rem;
-  line-height: 2.1333333333rem;
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
   font-weight: 700;
   font-family: "DM Serif Display", serif;
   color: #36536B;
@@ -336,7 +336,7 @@ input[type=email], input[type=submit] {
 input[type=email] {
   background-color: #f2f2f2;
   padding: 0rem 1.3333333333rem;
-  box-shadow: 0.0666666667rem 0.1333333333rem 0.2rem rgba(0, 0, 0, 0.116);
+  box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.116);
   margin: 1rem 0rem;
   color: #36536B;
 }
