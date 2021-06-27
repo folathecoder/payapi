@@ -1,3 +1,5 @@
+
+
 // ===============  AUTOMATICALLY CONVERT PX TO REM
 @function rem($size) {
     $remSize: $size / 15;
@@ -67,6 +69,9 @@ $weight-semi-bold: 600;
 $weight-bold: 700;
 $weight-extra-bold: 800;
 
+// =============== UNIVERSAL VALUES
+$max-width: rem(1110);
+
 // ===============  BASE CSS RESET
 *,
 *::before,
@@ -135,15 +140,44 @@ a {
         color: $color-sec-200;
     }
 }
-// ===============  HEADER SECTION
 
+h1 {
+    font-size: rem(28);
+    line-height: rem(32);
+    font-weight: $weight-bold;
+    font-family: $font-pry;
+    color: $color-sec-500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ===============  HEADER SECTION
 .header-container {
     top: 0;
     max-width: 100%;
-    margin: rem(20);
+    padding: rem(20);
 }
 .header {
-    max-width: rem(1110);
+    max-width: $max-width;
     min-height: rem(48);
     margin: rem(0) auto;
     padding-top: rem(20);
@@ -320,6 +354,113 @@ a {
     width: 100%;
     height: rem(1000);
 }
+
+
+// ================================= HOMEPAGE
+
+// =============== HERO SECTION
+
+.home__header {
+    // background-color: red;
+    background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+    background-size: rem(500) auto;
+    background-position: center rem(-300);
+    background-repeat: no-repeat;
+}
+
+.hero {
+    max-width: 100%;
+    min-height: rem(0);
+    // background-color: rgb(247, 247, 247);
+
+    &__inner {
+        // background-color: red;
+        max-width: $max-width;
+        margin: rem(0) auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.hero__image {
+    justify-self: center;
+    
+    img {
+        height: rem(330);
+        width: auto;
+        transform: translateX(rem(10));
+    }
+}
+.hero__content {
+    // background-color: yellow;
+    text-align: center;
+}
+
+.hero__content p, a {
+    font-size: rem(14);
+    margin: rem(15) rem(0) rem(50) rem(0);
+}
+
+// =============== UNIVERSAL FORM
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    margin: rem(20) rem(0);
+}
+
+input[type="email"], input[type="submit"] {
+    height: rem(48);
+    border: none;
+    border-radius: rem(50);
+    font-size: rem(14);
+    font-weight: $weight-bold;
+}
+
+input[type="email"] {
+    background-color: $color-bg;
+    padding: rem(0) rem(20);
+    box-shadow: rem(1) rem(2) rem(3) rgba(0, 0, 0, 0.116);
+    margin: rem(15) rem(0);
+    color: $color-sec-500;
+}
+
+input[type="submit"] {
+    background-color: $color-pry-100;
+    box-shadow: $shadow-btn;
+    color: $color-sec-800;
+
+    &:hover {
+        background-color: #DA6D97;
+        color: $color-sec-800;
+        transition: all 0.5s linear;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //=============== FOOTER SECTION

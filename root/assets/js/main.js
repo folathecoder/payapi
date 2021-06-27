@@ -19,8 +19,8 @@ const headerSection = document.querySelector('.header-container');
 //* Open mobile menu
 const OpenMobileMenu = function() {
     mobileMenu.classList.add('menu-active');
-    body.style.overflow = 'hidden';
     overlay.style.display = 'block';
+    body.style.overflow = 'hidden';
 }
 
 //* Close mobile menu
