@@ -8,6 +8,7 @@ const overlay = document.querySelector('.overlay');
 const body = document.body;
 const scrollUp = document.querySelector('.scroll-up');
 const headerSection = document.querySelector('.header-container');
+const htmlDom = document.documentElement;
 
 
 
@@ -21,12 +22,14 @@ const OpenMobileMenu = function() {
     mobileMenu.classList.add('menu-active');
     overlay.style.display = 'block';
     body.style.overflow = 'hidden';
+    htmlDom.style.overflow = 'hidden';
 }
 
 //* Close mobile menu
 const CloseMobileMenu = function(e) {
     mobileMenu.classList.remove('menu-active');
     body.style.overflow = 'auto';
+    htmlDom.style.overflow = 'auto';
     overlay.style.display = 'none';
 }
 
