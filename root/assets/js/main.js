@@ -11,9 +11,6 @@ const headerSection = document.querySelector('.header-container');
 const htmlDom = document.documentElement;
 
 
-
-
-
 // ============================================================
 //TODO: Mobile navigation menu feature
 
@@ -29,7 +26,8 @@ const OpenMobileMenu = function() {
 const CloseMobileMenu = function(e) {
     mobileMenu.classList.remove('menu-active');
     body.style.overflow = 'auto';
-    htmlDom.style.overflow = 'auto';
+    htmlDom.style.overflowY = 'auto';
+    htmlDom.style.overflowX = 'hidden';
     overlay.style.display = 'none';
 }
 
