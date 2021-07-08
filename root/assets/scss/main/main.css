@@ -104,20 +104,14 @@ h2 {
 }
 @media screen and (min-width: 602px) {
   h2 {
-    font-size: 3rem;
-    line-height: 3.5333333333rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  h2 {
-    font-size: 3.6666666667rem;
-    line-height: 4rem;
+    font-size: 2.6666666667rem;
+    line-height: 3.3333333333rem;
   }
 }
 @media screen and (min-width: 1200px) {
   h2 {
-    font-size: 4.3333333333rem;
-    line-height: 4.3333333333rem;
+    font-size: 3.2rem;
+    line-height: 3.7333333333rem;
   }
 }
 
@@ -506,6 +500,18 @@ input[type=submit]:hover {
   background-position: center -20rem;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 602px) {
+  .partners {
+    background-size: 63.2666666667rem auto;
+    background-position: center -36.6666666667rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .partners {
+    background-size: 52rem auto;
+    background-position: -16.6666666667rem -23.3333333333rem;
+  }
+}
 .partners__inner {
   max-width: 74rem;
   margin: 0rem auto;
@@ -514,7 +520,27 @@ input[type=submit]:hover {
   padding: 3.3333333333rem 1.3333333333rem;
   text-align: center;
 }
+@media screen and (min-width: 992px) {
+  .partners__inner {
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+    min-height: 31.4666666667rem;
+    padding: 3.3333333333rem 1.3333333333rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners__inner {
+    padding: 3.3333333333rem 0rem;
+  }
+}
 
+@media screen and (min-width: 992px) {
+  .partners__logos {
+    max-width: 35.7333333333rem;
+    margin: 0rem auto;
+  }
+}
 .partners__logos-inner {
   display: flex;
   flex-wrap: wrap;
@@ -532,12 +558,22 @@ input[type=submit]:hover {
     flex: 1 50%;
   }
 }
+@media screen and (min-width: 602px) {
+  .partners__logos-inner > * {
+    flex: 1 33.33%;
+    height: 4rem;
+  }
+}
 
 .partners__logo img {
   height: 1rem;
   width: auto;
 }
 
+.partners__content {
+  max-width: 30.4666666667rem;
+  margin: 0rem auto;
+}
 .partners__content h2 {
   color: #FBFCFE;
   margin: 2.6666666667rem 0rem 1.3333333333rem 0rem;

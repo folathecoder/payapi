@@ -175,18 +175,18 @@ h2 {
     color: $color-sec-500;
 
     @include media-query(large-mobile) {
-        font-size: rem(45);
-        line-height: rem(53);
+        font-size: rem(40);
+        line-height: rem(50);
     }
 
-    @include media-query(tablet) {
-        font-size: rem(55);
-        line-height: rem(60);
-    }
+    // @include media-query(tablet) {
+    //     font-size: rem(55);
+    //     line-height: rem(60);
+    // }
 
     @include media-query(desktop) {
-        font-size: rem(65);
-        line-height: rem(65);
+        font-size: rem(48);
+        line-height: rem(56);
     }
 }
 
@@ -574,6 +574,16 @@ input[type="submit"] {
     background-position: center rem(-300);
     background-repeat: no-repeat;
 
+    @include media-query(large-mobile) {
+        background-size: rem(949) auto;
+        background-position: center rem(-550);
+    }
+
+    @include media-query(tablet) {
+        background-size: rem(780) auto;
+        background-position: rem(-250) rem(-350);
+    }
+
     &__inner {
         // background-color: #fff;
         max-width: $max-width;
@@ -582,11 +592,26 @@ input[type="submit"] {
         flex-direction: column;
         padding: rem(50) rem(20);
         text-align: center;
+        
+        @include media-query(tablet) {
+            flex-direction: row-reverse;
+            align-items: center;
+            text-align: left;
+            min-height: rem(472);
+            padding: rem(50) rem(20);
+        }
+
+        @include media-query(desktop) {
+            padding: rem(50) rem(0);
+        }
     }
 }
 
 .partners__logos {
-    // background-color: red;
+    @include media-query(tablet) {
+        max-width: rem(536);
+        margin: rem(0) auto;
+    }
 
     &-inner {
         display: flex;
@@ -603,6 +628,10 @@ input[type="submit"] {
             @include media-query(mobile) {
                 flex: 1 50%;
             }
+            @include media-query(large-mobile) {
+                flex: 1 33.33%;
+                height: rem(60);
+            }
         }
     }
 }
@@ -615,6 +644,13 @@ input[type="submit"] {
 }
 
 .partners__content {
+    max-width: rem(457);
+    margin: rem(0) auto;
+
+    // @include media-query(desktop) {
+    //     max-width: 100%;
+    // }
+
     h2 {
         color: $color-sec-800;
         margin: rem(40) rem(0) rem(20) rem(0);
