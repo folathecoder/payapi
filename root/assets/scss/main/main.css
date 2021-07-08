@@ -76,6 +76,24 @@ h1 {
   font-family: "DM Serif Display", serif;
   color: #36536B;
 }
+@media screen and (min-width: 602px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5333333333rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.6666666667rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4.3333333333rem;
+    line-height: 4.3333333333rem;
+  }
+}
 
 .header-container {
   top: 0;
@@ -135,7 +153,7 @@ h1 {
   font-weight: bold;
   border-radius: 3.3333333333rem;
   color: #e0e0e0;
-  box-shadow: 0rem 0.0666666667rem 0.1333333333rem rgba(0, 0, 0, 0.562);
+  box-shadow: 0rem 0.1333333333rem 0.3333333333rem rgba(0, 0, 0, 0.199);
 }
 .btn:hover {
   background-color: #DA6D97;
@@ -288,6 +306,18 @@ h1 {
   background-position: center -20rem;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 602px) {
+  .home__header {
+    background-size: 63.2666666667rem auto;
+    background-position: center -36.6666666667rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home__header {
+    background-size: 52rem auto;
+    background-position: 43.3333333333rem -20rem;
+  }
+}
 
 .hero {
   max-width: 100%;
@@ -300,29 +330,104 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 992px) {
+  .hero__inner {
+    min-height: 36.6666666667rem;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__inner {
+    min-height: calc(100vh - 60px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__inner > * {
+    flex: 1;
+  }
+}
 
 .hero__image {
   justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero__image img {
   height: 22rem;
   width: auto;
   transform: translateX(0.6666666667rem);
 }
+@media screen and (min-width: 602px) {
+  .hero__image img {
+    height: 26.6666666667rem;
+    width: auto;
+    transform: translateX(0rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__image img {
+    height: 33.3333333333rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__image img {
+    height: 36.6666666667rem;
+  }
+}
 
 .hero__content {
   text-align: center;
+}
+@media screen and (min-width: 602px) {
+  .hero__content {
+    max-width: 38.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__content {
+    max-width: 100%;
+    text-align: left;
+  }
 }
 
 .hero__content p, a {
   font-size: 0.9333333333rem;
   margin: 1rem 0rem 3.3333333333rem 0rem;
 }
+@media screen and (min-width: 992px) {
+  .hero__content p, a {
+    transform: translateX(1.3333333333rem);
+  }
+}
 
 .main-form {
   display: flex;
   flex-direction: column;
   margin: 1.3333333333rem 0rem;
+}
+@media screen and (min-width: 602px) {
+  .main-form {
+    height: 3.2rem;
+    border-radius: 3.3333333333rem;
+    background-color: #f2f2f2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0rem 0.1333333333rem 0.3333333333rem rgba(0, 0, 0, 0.199);
+    max-width: 29.6666666667rem;
+    margin: 2.6666666667rem auto 0.6666666667rem auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-form {
+    margin: 2.6666666667rem 0rem 0.6666666667rem 0rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-form > * {
+    flex: 1;
+  }
 }
 
 input[type=email], input[type=submit] {
@@ -336,15 +441,27 @@ input[type=email], input[type=submit] {
 input[type=email] {
   background-color: #f2f2f2;
   padding: 0rem 1.3333333333rem;
-  box-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 0.116);
+  box-shadow: 0rem 0.1333333333rem 0.3333333333rem rgba(0, 0, 0, 0.199);
   margin: 1rem 0rem;
   color: #36536B;
+}
+@media screen and (min-width: 602px) {
+  input[type=email] {
+    flex: 2;
+    box-shadow: none;
+  }
 }
 
 input[type=submit] {
   background-color: #b9416f;
-  box-shadow: 0rem 0.0666666667rem 0.1333333333rem rgba(0, 0, 0, 0.562);
+  box-shadow: 0rem 0.1333333333rem 0.3333333333rem rgba(0, 0, 0, 0.199);
   color: #FBFCFE;
+}
+@media screen and (min-width: 602px) {
+  input[type=submit] {
+    flex: 1.5;
+    box-shadow: none;
+  }
 }
 input[type=submit]:hover {
   background-color: #DA6D97;
@@ -471,7 +588,7 @@ input[type=submit]:hover {
   right: 0;
   bottom: 0;
   margin: 1rem;
-  box-shadow: 0rem 0.0666666667rem 0.1333333333rem rgba(0, 0, 0, 0.562);
+  box-shadow: 0rem 0.1333333333rem 0.3333333333rem rgba(0, 0, 0, 0.199);
   display: grid;
   place-items: center;
   cursor: pointer;
