@@ -71,7 +71,7 @@ a:hover {
 
 h1 {
   font-size: 2.1333333333rem;
-  line-height: 2.4rem;
+  line-height: 2.2666666667rem;
   font-weight: 700;
   font-family: "DM Serif Display", serif;
   color: #36536B;
@@ -90,6 +90,32 @@ h1 {
 }
 @media screen and (min-width: 1200px) {
   h1 {
+    font-size: 4.3333333333rem;
+    line-height: 4.3333333333rem;
+  }
+}
+
+h2 {
+  font-size: 1.8666666667rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  font-family: "DM Serif Display", serif;
+  color: #36536B;
+}
+@media screen and (min-width: 602px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3.5333333333rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 3.6666666667rem;
+    line-height: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
     font-size: 4.3333333333rem;
     line-height: 4.3333333333rem;
   }
@@ -469,6 +495,66 @@ input[type=submit]:hover {
   background-color: #DA6D97;
   color: #FBFCFE;
   transition: all 0.5s linear;
+}
+
+.partners {
+  background-color: #1B262F;
+  max-width: 100%;
+  min-height: 0rem;
+  background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+  background-size: 33.3333333333rem auto;
+  background-position: center -20rem;
+  background-repeat: no-repeat;
+}
+.partners__inner {
+  max-width: 74rem;
+  margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3.3333333333rem 1.3333333333rem;
+  text-align: center;
+}
+
+.partners__logos-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.6666666667rem 0rem;
+}
+.partners__logos-inner > * {
+  flex: 1 100%;
+  height: 3.3333333333rem;
+  display: grid;
+  place-items: center;
+  padding: 1.3333333333rem;
+}
+@media screen and (min-width: 320px) {
+  .partners__logos-inner > * {
+    flex: 1 50%;
+  }
+}
+
+.partners__logo img {
+  height: 1rem;
+  width: auto;
+}
+
+.partners__content h2 {
+  color: #FBFCFE;
+  margin: 2.6666666667rem 0rem 1.3333333333rem 0rem;
+}
+.partners__content p {
+  color: #FBFCFE;
+  margin-bottom: 2.6666666667rem;
+}
+.partners__content .btn {
+  background-color: transparent;
+  border: 0.1333333333rem solid #FBFCFE;
+}
+.partners__content .btn:hover {
+  transition: 0.5s;
+  color: #1B262F;
+  background-color: #FBFCFE;
+  border: 0.1333333333rem solid #FBFCFE;
 }
 
 .footer {
