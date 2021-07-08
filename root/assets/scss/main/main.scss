@@ -285,7 +285,7 @@ h1 {
         justify-content: flex-end;
         align-items: flex-end;
         margin-right: rem(20);
-        margin-top: rem(-8);
+        margin-top: rem(-50);
         button {
             border: none;
             background-color: transparent;
@@ -312,7 +312,7 @@ h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: rem(-80);
+        margin-top: rem(-140);
     }
     .menu-item {
         padding: rem(10) rem(0);
@@ -330,7 +330,7 @@ h1 {
         margin: rem(40) rem(20);
         display: block;
         text-align: center;
-        margin-top: rem(0);
+        margin-top: rem(-40);
     }
     .dropdown-btn {
         display: block;
@@ -340,10 +340,12 @@ h1 {
     .menu__line {
         display: block;
     }
-    .menu__line hr {
-        width: 85%;
+    .hr {
+        height: rem(1);
+        max-width: 85%;
         margin: rem(25) auto;
-        color: hsla(0, 0%, 1%, 0.267);
+        background-color: #979797;
+        border-radius: rem(50);
     }
     .menu-active {
         transition: 0.5s linear;
