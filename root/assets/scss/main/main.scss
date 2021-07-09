@@ -836,7 +836,7 @@ input[type="submit"] {
 
     &__inner {
         max-width: $max-width;
-        min-height: rem(300);
+        min-height: rem(250);
         margin: rem(0) auto;
         display: flex;
         flex-direction: column;
@@ -866,6 +866,42 @@ input[type="submit"] {
         transform: translateX(rem(100)) translateY(rem(-20));
     }
 }
+
+
+// ====================================== PRICING PAGE
+
+
+.pricing {
+    max-width: 100%;
+    background-color: red;
+
+    &__inner {
+        background-color: #fff;
+        max-width: $max-width;
+        margin: rem(0) auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -956,14 +992,6 @@ input[type="submit"] {
         flex: 1;
         justify-content: right;
     }
-
-    // img:hover {
-    //     background: linear-gradient(90deg, red, red);
-    //     -webkit-background-clip: text;
-    //     -webkit-text-fill-color: transparent;
-    // }
-    
-
     & > * {
         margin: rem(0) rem(10);
     }

@@ -750,7 +750,7 @@ input[type=submit]:hover {
 }
 .cta__inner {
   max-width: 74rem;
-  min-height: 20rem;
+  min-height: 16.6666666667rem;
   margin: 0rem auto;
   display: flex;
   flex-direction: column;
@@ -779,6 +779,16 @@ input[type=submit]:hover {
   .cta__form {
     transform: translateX(6.6666666667rem) translateY(-1.3333333333rem);
   }
+}
+
+.pricing {
+  max-width: 100%;
+  background-color: red;
+}
+.pricing__inner {
+  background-color: #fff;
+  max-width: 74rem;
+  margin: 0rem auto;
 }
 
 .footer {
