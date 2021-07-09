@@ -593,10 +593,34 @@ input[type=submit]:hover {
   border: 0.1333333333rem solid #FBFCFE;
 }
 
+@media screen and (min-width: 992px) {
+  .features__container {
+    background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 52rem auto;
+    background-position: 46.6666666667rem 26.6666666667rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__container {
+    background-position: 66.6666666667rem 26.6666666667rem;
+  }
+}
+
 .features {
   max-width: 100%;
   min-height: 0rem;
   padding: 0.6666666667rem 0rem;
+}
+@media screen and (min-width: 786px) {
+  .features {
+    padding: 1.3333333333rem 0rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .features {
+    padding: 3.3333333333rem 0rem;
+  }
 }
 .features__inner {
   max-width: 74rem;
@@ -606,18 +630,70 @@ input[type=submit]:hover {
   justify-content: center;
   text-align: center;
 }
+@media screen and (min-width: 992px) {
+  .features__inner {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 992px) {
+  .features__inner2 {
+    flex-direction: row-reverse;
+  }
+}
 
 .features__image {
   display: flex;
   margin: 0rem auto;
 }
+@media screen and (min-width: 992px) {
+  .features__image {
+    margin: 0;
+    justify-content: flex-start;
+  }
+}
 
 .features__img {
-  margin-left: 0.6666666667rem;
+  margin-left: 1rem;
+}
+@media screen and (min-width: 602px) {
+  .features__img {
+    margin-left: 1.3333333333rem;
+  }
+}
+@media screen and (min-width: 786px) {
+  .features__img {
+    margin-left: 2.3333333333rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .features__img {
+    margin-left: -1.3333333333rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__img2 {
+    margin-left: 0rem;
+    transform: translateX(6rem);
+  }
 }
 
 .features__content {
   padding: 0rem 1.3333333333rem 2rem 1.3333333333rem;
+  max-width: 38.2rem;
+  margin: -0.6666666667rem auto 0rem auto;
+}
+@media screen and (min-width: 786px) {
+  .features__content {
+    margin: -2rem auto 0rem auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .features__content {
+    max-width: 30.6666666667rem;
+  }
 }
 .features__content h2 {
   margin-bottom: 1.0666666667rem;

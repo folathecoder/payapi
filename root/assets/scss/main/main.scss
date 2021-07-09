@@ -676,11 +676,31 @@ input[type="submit"] {
 
 //FEATURES SECTION 
 
+.features__container {
+    @include media-query(tablet) {
+        background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+        background-repeat: no-repeat;
+        background-size: rem(780) auto;
+        background-position: rem(700) rem(400);
+    }
+    @include media-query(desktop) {
+        background-position: rem(1000) rem(400);
+    }
+}
+
 .features {
     max-width: 100%;
     // background-color: red;
     min-height: rem(0);
     padding: rem(10) rem(0);
+
+    @include media-query(tablet-mini) {
+        padding: rem(20) rem(0);
+    }
+
+    @include media-query(tablet) {
+        padding: rem(50) rem(0);
+    }
 
     &__inner {
         max-width: $max-width;
@@ -690,20 +710,63 @@ input[type="submit"] {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+
+        @include media-query(tablet) {
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+        }
+    }
+
+    &__inner2 {
+        @include media-query(tablet) {
+            flex-direction: row-reverse;
+        }
     }
 }
 
 .features__image {
     display: flex;
     margin: rem(0) auto;
+
+    @include media-query(tablet) {
+        margin: 0;
+        justify-content: flex-start;
+    }
 }
 .features__img {
-    margin-left: rem(10);
+    margin-left: rem(15);
+
+    @include media-query(large-mobile) {
+        margin-left: rem(20);
+    }
+    @include media-query(tablet-mini) {
+        margin-left: rem(35);
+    }
+    @include media-query(tablet) {
+        margin-left: rem(-20);
+    }
+}
+
+.features__img2 {
+    @include media-query(desktop) {
+        margin-left: rem(0);
+        transform: translateX(rem(90));
+    }
 }
 
 .features__content {
     padding: rem(0) rem(20) rem(30) rem(20);
-    // margin-top: rem(-50);
+    max-width: rem(573);
+    margin: rem(-10) auto rem(0) auto;
+
+    @include media-query(tablet-mini) {
+        margin: rem(-30) auto rem(0) auto;
+    }
+    @include media-query(tablet) {
+        max-width: rem(460);
+    }
+
     h2 {
         margin-bottom: rem(16);
     }
