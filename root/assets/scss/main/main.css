@@ -612,9 +612,12 @@ input[type=submit]:hover {
   margin: 0rem auto;
 }
 
+.features__img {
+  margin-left: 0.6666666667rem;
+}
+
 .features__content {
   padding: 0rem 1.3333333333rem 2rem 1.3333333333rem;
-  margin-top: -3.3333333333rem;
 }
 .features__content h2 {
   margin-bottom: 1.0666666667rem;

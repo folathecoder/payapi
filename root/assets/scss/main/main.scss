@@ -697,10 +697,13 @@ input[type="submit"] {
     display: flex;
     margin: rem(0) auto;
 }
+.features__img {
+    margin-left: rem(10);
+}
 
 .features__content {
     padding: rem(0) rem(20) rem(30) rem(20);
-    margin-top: rem(-50);
+    // margin-top: rem(-50);
     h2 {
         margin-bottom: rem(16);
     }
