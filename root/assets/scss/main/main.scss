@@ -873,6 +873,7 @@ input[type="submit"] {
 
 .pricing {
     max-width: 100%;
+
     &__inner {
         max-width: $max-width;
         margin: rem(0) auto;
@@ -881,17 +882,44 @@ input[type="submit"] {
 .pricing__header {
     text-align: center;
     padding-top: rem(50);
+    
+    @include media-query(tablet-mini) {
+        padding-top: rem(60);
+    }
 
-    // h1 {
-    //     font-size: rem(32);
-    //     line-height: rem(36);
-    // }
+    @include media-query(desktop) {
+        padding-top: rem(70);
+        text-align: left;
+    }
+
+    h1 {
+        font-size: rem(32);
+        line-height: rem(36);
+
+        @include media-query(tablet-mini) {
+            font-size: rem(48);
+            line-height: rem(48);
+        }
+
+        @include media-query(desktop) {
+            font-size: rem(56);
+            line-height: rem(56);
+        }
+    }
 }
 
 .pricing__content {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+
+    @include media-query(tablet-mini) {
+        flex-direction: row;
+
+        & > * {
+            flex: 1;
+        }
+    }
 }
 .plan {
     display: flex;
@@ -900,8 +928,14 @@ input[type="submit"] {
     text-align: center;
     margin-top: rem(80);
 
+    @include media-query(desktop) {
+        text-align: left;
+        align-items: flex-start;
+    }
+
     &__header {
         margin-bottom: rem(30);
+
         h2 {
             font-size: rem(24);
             line-height: rem(32);
@@ -911,6 +945,11 @@ input[type="submit"] {
 
     &__description {
         display: none;
+
+        @include media-query(desktop) {
+            display: block;
+            max-width: rem(350);
+        }
     }
 
     &__price {
@@ -926,6 +965,14 @@ input[type="submit"] {
         height: rem(1);
         background-color: #979797;
         margin: rem(10) rem(0);
+
+        @include media-query(large-mobile) {
+            width: 60%;
+        }
+
+        @include media-query(tablet-mini) {
+            width: 90%;
+        }
 
         &-bottom {
             opacity: 0.3;

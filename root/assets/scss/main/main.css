@@ -793,11 +793,46 @@ input[type=submit]:hover {
   text-align: center;
   padding-top: 3.3333333333rem;
 }
+@media screen and (min-width: 786px) {
+  .pricing__header {
+    padding-top: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing__header {
+    padding-top: 4.6666666667rem;
+    text-align: left;
+  }
+}
+.pricing__header h1 {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+}
+@media screen and (min-width: 786px) {
+  .pricing__header h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricing__header h1 {
+    font-size: 3.7333333333rem;
+    line-height: 3.7333333333rem;
+  }
+}
 
 .pricing__content {
   max-width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 786px) {
+  .pricing__content {
+    flex-direction: row;
+  }
+  .pricing__content > * {
+    flex: 1;
+  }
 }
 
 .plan {
@@ -806,6 +841,12 @@ input[type=submit]:hover {
   align-items: center;
   text-align: center;
   margin-top: 5.3333333333rem;
+}
+@media screen and (min-width: 1200px) {
+  .plan {
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 .plan__header {
   margin-bottom: 2rem;
@@ -818,6 +859,12 @@ input[type=submit]:hover {
 .plan__description {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .plan__description {
+    display: block;
+    max-width: 23.3333333333rem;
+  }
+}
 .plan__price h2 {
   font-size: 3.7333333333rem;
   line-height: 4.8rem;
@@ -828,6 +875,16 @@ input[type=submit]:hover {
   height: 0.0666666667rem;
   background-color: #979797;
   margin: 0.6666666667rem 0rem;
+}
+@media screen and (min-width: 602px) {
+  .plan__hr {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 786px) {
+  .plan__hr {
+    width: 90%;
+  }
 }
 .plan__hr-bottom {
   opacity: 0.3;
