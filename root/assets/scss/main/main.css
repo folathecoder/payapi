@@ -593,6 +593,33 @@ input[type=submit]:hover {
   border: 0.1333333333rem solid #FBFCFE;
 }
 
+.features {
+  max-width: 100%;
+  min-height: 0rem;
+  padding: 0.6666666667rem 0rem;
+}
+.features__inner {
+  max-width: 74rem;
+  margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.features__image {
+  display: flex;
+  margin: 0rem auto;
+}
+
+.features__content {
+  padding: 0rem 1.3333333333rem 2rem 1.3333333333rem;
+  margin-top: -3.3333333333rem;
+}
+.features__content h2 {
+  margin-bottom: 1.0666666667rem;
+}
+
 .footer {
   background-color: #1B262F;
   padding: 2rem 0rem;

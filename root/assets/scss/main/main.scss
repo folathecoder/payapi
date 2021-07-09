@@ -674,8 +674,37 @@ input[type="submit"] {
 }
 
 
+//FEATURES SECTION 
 
+.features {
+    max-width: 100%;
+    // background-color: red;
+    min-height: rem(0);
+    padding: rem(10) rem(0);
 
+    &__inner {
+        max-width: $max-width;
+        // background-color: #fff;
+        margin: rem(0) auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.features__image {
+    display: flex;
+    margin: rem(0) auto;
+}
+
+.features__content {
+    padding: rem(0) rem(20) rem(30) rem(20);
+    margin-top: rem(-50);
+    h2 {
+        margin-bottom: rem(16);
+    }
+}
 
 
 
