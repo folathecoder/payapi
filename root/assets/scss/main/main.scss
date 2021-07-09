@@ -870,7 +870,32 @@ input[type="submit"] {
 
 // ====================================== PRICING PAGE
 
+.main-header-container {
+    background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+    background-size: rem(500) auto;
+    background-position: rem(100) rem(-400);
+    background-repeat: no-repeat;
 
+    @include media-query(large-mobile) {
+        background-size: rem(600) auto;
+        background-position: rem(400) rem(-400);
+    }
+
+    @include media-query(tablet-mini) {
+        background-size: rem(600) auto;
+        background-position: rem(500) rem(-400);
+    }
+
+    @include media-query(tablet) {
+        background-size: rem(700) auto;
+        background-position: rem(750) rem(-400);
+    }
+
+    @include media-query(desktop) {
+        background-size: rem(700) auto;
+        background-position: rem(750) rem(-450);
+    }
+}
 .pricing {
     max-width: 100%;
 

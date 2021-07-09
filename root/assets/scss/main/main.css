@@ -781,6 +781,37 @@ input[type=submit]:hover {
   }
 }
 
+.main-header-container {
+  background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+  background-size: 33.3333333333rem auto;
+  background-position: 6.6666666667rem -26.6666666667rem;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 602px) {
+  .main-header-container {
+    background-size: 40rem auto;
+    background-position: 26.6666666667rem -26.6666666667rem;
+  }
+}
+@media screen and (min-width: 786px) {
+  .main-header-container {
+    background-size: 40rem auto;
+    background-position: 33.3333333333rem -26.6666666667rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .main-header-container {
+    background-size: 46.6666666667rem auto;
+    background-position: 50rem -26.6666666667rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-header-container {
+    background-size: 46.6666666667rem auto;
+    background-position: 50rem -30rem;
+  }
+}
+
 .pricing {
   max-width: 100%;
 }
