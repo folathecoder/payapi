@@ -783,12 +783,85 @@ input[type=submit]:hover {
 
 .pricing {
   max-width: 100%;
-  background-color: red;
 }
 .pricing__inner {
-  background-color: #fff;
   max-width: 74rem;
   margin: 0rem auto;
+}
+
+.pricing__header {
+  text-align: center;
+  padding-top: 3.3333333333rem;
+}
+
+.pricing__content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5.3333333333rem;
+}
+.plan__header {
+  margin-bottom: 2rem;
+}
+.plan__header h2 {
+  font-size: 1.6rem;
+  line-height: 2.1333333333rem;
+  color: #b9416f;
+}
+.plan__description {
+  display: none;
+}
+.plan__price h2 {
+  font-size: 3.7333333333rem;
+  line-height: 4.8rem;
+  color: #37546d;
+}
+.plan__hr {
+  width: 100%;
+  height: 0.0666666667rem;
+  background-color: #979797;
+  margin: 0.6666666667rem 0rem;
+}
+.plan__hr-bottom {
+  opacity: 0.3;
+}
+.plan__icon {
+  margin-right: 1rem;
+}
+.plan__icon i {
+  color: #b9416f;
+}
+.plan__offer {
+  line-height: 2.5333333333rem;
+  text-align: left;
+}
+.plan__button {
+  margin-top: 2rem;
+}
+.plan__button .btn {
+  background-color: transparent;
+  border: 0.1333333333rem solid #1B262F;
+  color: #1B262F;
+  box-shadow: none;
+}
+.plan__button .btn:hover {
+  background-color: #1B262F;
+  color: #f2f2f2;
+}
+
+.plan__offer-inactive {
+  opacity: 0.3;
+}
+
+.plan__offer-inactive > .plan__icon {
+  opacity: 0;
 }
 
 .footer {
