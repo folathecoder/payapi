@@ -123,6 +123,17 @@ h3 {
   color: #36536B;
 }
 
+.notification {
+  background-color: #b9416f;
+  color: #f2f2f2;
+  padding: 0.6666666667rem 1.3333333333rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 6.6666666667rem;
+  margin-right: 1.3333333333rem;
+}
+
 .header-container {
   top: 0;
   max-width: 100%;
@@ -1092,6 +1103,15 @@ input[type=submit]:hover {
 .about__image {
   max-width: 100%;
   min-height: 0rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .bg__wrapper {
+    background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+    background-size: 52rem auto;
+    background-position: -40rem 40rem;
+    background-repeat: no-repeat;
+  }
 }
 
 .contact {

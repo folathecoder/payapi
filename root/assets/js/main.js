@@ -9,6 +9,7 @@ const body = document.body;
 const scrollUp = document.querySelector('.scroll-up');
 const headerSection = document.querySelector('.header-container');
 const htmlDom = document.documentElement;
+const header = document.querySelector('.header');
 
 
 // ============================================================
@@ -54,9 +55,35 @@ document.addEventListener('keydown', e => {
 })
 //===========================================================
 
-
 //TODO: Scroll-Up feature 
 
-scrollUp.addEventListener('click', e => {
-    headerSection.scrollIntoView({behavior: 'smooth'});
+// scrollUp.addEventListener('click', e => {
+//     headerSection.scrollIntoView({behavior: 'smooth'});
+// })
+
+//===========================================================
+
+//TODO: Notifications
+
+const planBtn = document.querySelectorAll('.plan__button a');
+const requestAccess = document.createElement('div');
+requestAccess.classList.add('notification');
+requestAccess.innerHTML = '<p>Request Sent!</p>';
+header.prepend(requestAccess);
+
+requestAccess.style.opacity = '0';
+requestAccess.style.transform = 'translateX(120%)';
+
+planBtn.forEach( btn => {
+    console.log(btn);
+
+    btn.addEventListener('click', function() {
+        preventDefault();
+        requestAccess.style.opacity = '1';
+        requestAccess.style.transform = 'translateX(0%)';
+    })
 })
+
+console.log(planBtn);
+
+
