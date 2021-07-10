@@ -1094,6 +1094,130 @@ input[type=submit]:hover {
   min-height: 0rem;
 }
 
+.contact {
+  max-width: 100%;
+  min-height: 33.3333333333rem;
+}
+.contact__inner {
+  max-width: 74rem;
+  margin: 0 auto;
+}
+.contact__header {
+  padding-top: 3.3333333333rem;
+  max-width: 36.6666666667rem;
+  text-align: center;
+}
+@media screen and (min-width: 786px) {
+  .contact__header {
+    padding-top: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__header {
+    max-width: 58rem;
+    padding-top: 4.6666666667rem;
+    padding-right: 12rem;
+    text-align: left;
+  }
+}
+.contact__header h1 {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+}
+@media screen and (min-width: 786px) {
+  .contact__header h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__header h1 {
+    font-size: 3.7333333333rem;
+    line-height: 3.7333333333rem;
+  }
+}
+.contact__content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3.3333333333rem 0rem;
+}
+.contact__content > * {
+  flex: 1;
+}
+.contact__form {
+  margin: 0rem 0rem;
+}
+.contact .btn {
+  background-color: transparent;
+  border: 0.1333333333rem solid #1B262F;
+  color: #1B262F;
+  box-shadow: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.contact .btn:hover {
+  background-color: #1B262F;
+  color: #f2f2f2;
+}
+.contact .partners__logo img {
+  background-color: #000000;
+  fill: #0000;
+}
+.contact__logos {
+  margin-top: 4.6666666667rem;
+  text-align: center;
+}
+
+.partners__heading {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.contact__form input[type=text],
+.contact__form input[type=email] {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-height: 3.3333333333rem;
+  border-radius: 0rem;
+  margin: 0rem;
+  border: none;
+  box-shadow: none;
+  border-bottom: 0.0666666667rem solid #36536B;
+  font-size: 0.9333333333rem;
+  font-weight: 400;
+  padding: 0;
+  color: #36536B;
+}
+.contact__form input[type=text]:focus,
+.contact__form input[type=email]:focus {
+  outline: none;
+}
+
+#message {
+  max-width: 100%;
+  min-height: 6.6666666667rem;
+}
+
+.contact__check {
+  display: flex;
+  margin: 2rem 0rem;
+}
+.contact__check p {
+  font-size: 0.9333333333rem;
+  line-height: 1.3333333333rem;
+}
+
+input[type=checkbox] {
+  margin-right: 1.3333333333rem;
+}
+input[type=checkbox]:checked {
+  background-color: red;
+}
+input[type=checkbox]:active {
+  background-color: red;
+}
+
 .footer {
   background-color: #1B262F;
   padding: 2rem 0rem;

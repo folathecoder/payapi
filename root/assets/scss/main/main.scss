@@ -1180,22 +1180,144 @@ input[type="submit"] {
         font-family: $font-pry;
     }
 }
-
-
-
-
-
 .about__image {
     max-width: 100%;
     min-height: rem(0);
 }
 
 
+// ====================================== CONTACT PAGE 
 
+.contact {
+    max-width: 100%;
+    min-height: rem(500);
 
+    &__inner {
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+    
+    &__header {
+        padding-top: rem(50);
+        max-width: rem(550);
+        text-align: center;
+        
+        @include media-query(tablet-mini) {
+            padding-top: rem(60);
 
+        }
+    
+        @include media-query(desktop) {
+            max-width: rem(870);
+            padding-top: rem(70);
+            padding-right: rem(180);
+            text-align: left;
+        }
+    
+        h1 {
+            font-size: rem(32);
+            line-height: rem(36);
+    
+            @include media-query(tablet-mini) {
+                font-size: rem(48);
+                line-height: rem(48);
+            }
+    
+            @include media-query(desktop) {
+                font-size: rem(56);
+                line-height: rem(56);
+            }
+        }
+    }
 
+    &__content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: rem(50) rem(0);
 
+        & > * {
+            flex: 1;
+        }
+    }
+
+    &__form {
+        margin: rem(0) rem(0);
+    }
+
+    .btn {
+        background-color: transparent;
+        border: rem(2) solid $color-sec-700;
+        color: $color-sec-700;
+        box-shadow: none;
+        padding-left: rem(45);
+        padding-right: rem(45);
+    }
+    .btn:hover {
+        background-color: $color-sec-700;
+        color: $color-bg;
+    }
+
+    .partners__logo {
+        img {
+            background-color: #000000;
+            fill: #0000;
+        }
+    }
+
+    &__logos {
+        margin-top: rem(70);
+        text-align: center;
+    }
+
+}
+.partners__heading {
+    margin-bottom: rem(30);
+    font-weight: $weight-regular;
+}
+.contact__form input[type=text],
+.contact__form input[type=email] {
+    background-color: $color-bg;
+    width: 100%;
+    min-height: rem(50);
+    border-radius: rem(0);
+    margin: rem(0);
+    border: none;
+    box-shadow: none;
+    border-bottom: rem(1) solid $color-sec-500;
+    font-size: rem(14);
+    font-weight: $weight-regular;
+    padding: 0;
+    color: $color-sec-500;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#message {
+    max-width: 100%;
+    min-height: rem(100);
+}
+.contact__check {
+    display: flex;
+    margin: rem(30) rem(0);
+    
+    p {
+        font-size: rem(14);
+        line-height: rem(20);
+    }
+}
+input[type=checkbox] {
+    margin-right: rem(20);
+    
+    &:checked {
+        background-color: red;
+    }
+    &:active {
+        background-color: red;
+    }
+}
 
 
 

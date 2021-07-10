@@ -45,7 +45,7 @@
 <body>
 
   <!-- START OF HEADER SECTION -->
-  <div class="header-container">
+  <div class="header-container main-header-container">
     <header class="header">
       <div class="header__inner">
         <div class="header__logo">
@@ -78,13 +78,82 @@
         </nav>
       </div>
     </header>
+
+    <section class="contact">
+
+      <div class="contact__inner">
+
+        <div class="contact__header">
+          <h1>Submit a help request and we’ll get in touch shortly.</h1>
+        </div>
+
+        <div class="contact__content">
+          <div class="contact__form">
+            <form action="" method="post">
+              <div>
+                <input type="text" name="name" id="name" placeholder="Name">
+              </div>
+              <div>
+                <input type="email" name="email" id="email" placeholder="Email Address">
+              </div>
+              <div>
+                <input type="text" name="company" id="company" placeholder="Company Name">
+              </div>
+              <div>
+                <input type="text" name="title" id="title" placeholder="Title">
+              </div>
+              <div>
+                <input type="text" name="message" id="message" placeholder="Message">
+              </div>
+              <div class="contact__check">
+                <div>
+                  <input type="checkbox" name="confirm" id="confirm">
+                </div>
+                <div>
+                  <p>Stay up-to-date with company announcements and updates to our API</p>
+                </div>
+              </div>
+              <div>
+                <input type="submit" value="Submit" class="btn">
+              </div>
+            </form>
+          </div>
+          <div class="contact__logos">
+            <div class="partners__heading">
+              <h2>Join the thousands of innovators already building with us</h2>
+            </div>
+            <div class="partners__logos">
+              <div class="partners__logos-inner">
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/tesla-c.svg" alt=""></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/microsoft-c.svg" alt=""></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/hewlett-packard-c.svg" alt=""></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/oracle-c.svg" alt=""></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/google-c.svg" alt=""></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/nvidia-c.svg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <!-- END OF SECTION HEADER -->
 
-
-  <secton>
-    <div class="sample"></div>
-  </secton>
+  <!-- START OF CTA SECTION -->
+  <section class="cta">
+    <div class="cta__inner">
+      <div class="cta__content">
+        <h2>Ready to start?</h2>
+      </div>
+      <div class="cta__form-container">
+        <form name="contact" method="POST" data-netlify="true" class="main-form cta__form">
+          <input type="email" name="email" id="email" placeholder="Enter email address">
+          <input type="submit" value="Schedule a Demo" class="form-btn">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- END OF CTA SECTION -->
 
 
   <!-- START OF FOOTER SECTION -->
