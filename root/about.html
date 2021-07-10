@@ -41,12 +41,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
+  <!-- PICTURE FILL CODE -->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+
 </head>
 
 <body>
 
   <!-- START OF HEADER SECTION -->
-  <div class="header-container">
+  <div class="header-container main-header-container">
     <header class="header">
       <div class="header__inner">
         <div class="header__logo">
@@ -79,14 +86,108 @@
         </nav>
       </div>
     </header>
+
+    <section class="intro">
+      <div class="intro__inner">
+        <div class="intro__header">
+          <h1>We empower innovators by delivering access to the financial system</h1>
+        </div>
+        <div class="intro__content">
+          <div class="intro__content-header">
+            <h2>Our Vision</h2>
+          </div>
+          <div class="intro__content-body">
+            <p>Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology.</p>
+          </div>
+        </div>
+        <div class="intro__content">
+          <div class="intro__content-header">
+            <h2>Our Business</h2>
+          </div>
+          <div class="intro__content-body">
+            <p>At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <!-- END OF SECTION HEADER -->
 
+  <section class="about__image">
+    <picture>
+      <source media="(max-width: 365px)" srcset="assets/mobile-image-team-members.jpg">
+      <source media="(max-width: 760px)" srcset="assets/tablet-image-team-members.jpg">
+      <img src="assets/desktop-image-team-members.jpg" alt="">
+   </picture>
+  </section>
 
-  <secton>
-    <div class="sample"></div>
-  </secton>
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat">
+        <div class="stat__content">
+          <h5>Team Members</h5>
+        </div>
+        <div class="stat__number">
+          <h6>300+</h6>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat__content">
+          <h5>Offices in the US</h5>
+        </div>
+        <div class="stat__number">
+          <h6>3</h6>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat__content">
+          <h5>Transactions analyzed</h5>
+        </div>
+        <div class="stat__number">
+          <h6>10M+</h6>
+        </div>
+      </div>
+    </div>
+  </section>
 
+
+  <section class="intro">
+    <div class="intro__inner">
+      <div class="intro__content">
+        <div class="intro__content-header">
+          <h2>The Culture</h2>
+        </div>
+        <div class="intro__content-body">
+          <p>We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title.</p>
+        </div>
+      </div>
+      <div class="intro__content">
+        <div class="intro__content-header">
+          <h2>The People</h2>
+        </div>
+        <div class="intro__content-body">
+          <p>We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- START OF CTA SECTION -->
+  <section class="cta">
+    <div class="cta__inner">
+      <div class="cta__content">
+        <h2>Ready to start?</h2>
+      </div>
+      <div class="cta__form-container">
+        <form name="contact" method="POST" data-netlify="true" class="main-form cta__form">
+          <input type="email" name="email" id="email" placeholder="Enter email address">
+          <input type="submit" value="Schedule a Demo" class="form-btn">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- END OF CTA SECTION -->
 
   <!-- START OF FOOTER SECTION -->
   <footer class="footer">

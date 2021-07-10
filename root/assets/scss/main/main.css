@@ -952,6 +952,115 @@ input[type=submit]:hover {
   opacity: 0;
 }
 
+.intro {
+  max-width: 100%;
+}
+.intro__inner {
+  max-width: 74rem;
+  margin: 0 auto;
+  min-height: 0rem;
+  text-align: center;
+}
+.intro__header {
+  padding-top: 3.3333333333rem;
+  max-width: 36.6666666667rem;
+  margin: 0rem auto;
+}
+@media screen and (min-width: 786px) {
+  .intro__header {
+    padding-top: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro__header {
+    max-width: 58rem;
+    padding-top: 4.6666666667rem;
+    padding-right: 12rem;
+    text-align: left;
+  }
+}
+.intro__header h1 {
+  font-size: 2.1333333333rem;
+  line-height: 2.4rem;
+}
+@media screen and (min-width: 786px) {
+  .intro__header h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro__header h1 {
+    font-size: 3.7333333333rem;
+    line-height: 3.7333333333rem;
+  }
+}
+.intro__content {
+  margin: 2.6666666667rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 786px) {
+  .intro__content {
+    margin: 5.3333333333rem 0rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.intro__content-header {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 786px) {
+  .intro__content-header {
+    width: 14.8666666667rem;
+    text-align: left;
+  }
+}
+.intro__content-header h2 {
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 786px) {
+  .intro__content-header h2 {
+    font-size: 2.1333333333rem;
+  }
+}
+@media screen and (min-width: 786px) {
+  .intro__content-body {
+    max-width: 31rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .intro__content-body {
+    max-width: 43.3333333333rem;
+  }
+}
+
+.stats {
+  max-width: 100%;
+  background-color: red;
+}
+.stats__inner {
+  max-width: 74rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat__number h6 {
+  font-size: 3.7333333333rem;
+  line-height: 4.8rem;
+  color: #b9416f;
+  font-family: "Public Sans", sans-serif;
+}
+
+.about__image {
+  max-width: 100%;
+  min-height: 0rem;
+}
+
 .footer {
   background-color: #1B262F;
   padding: 2rem 0rem;
