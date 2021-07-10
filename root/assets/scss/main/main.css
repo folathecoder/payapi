@@ -1036,24 +1036,57 @@ input[type=submit]:hover {
   }
 }
 
+.intro2 {
+  padding: 0rem 1.3333333333rem;
+}
+
 .stats {
   max-width: 100%;
-  background-color: red;
+  padding: 2.6666666667rem 1.3333333333rem 1.3333333333rem 1.3333333333rem;
+}
+@media screen and (min-width: 992px) {
+  .stats {
+    padding: 4.6666666667rem 1.3333333333rem 1.3333333333rem 1.3333333333rem;
+  }
 }
 .stats__inner {
   max-width: 74rem;
   margin: 0 auto;
+  min-height: 26.5333333333rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
+  border-top: 0.0666666667rem solid #969696;
+  border-bottom: 0.0666666667rem solid #969696;
+}
+@media screen and (min-width: 786px) {
+  .stats__inner {
+    text-align: left;
+    min-height: 8.9333333333rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.stat {
+  margin: 0.6666666667rem 0rem;
+  flex: 1;
+}
+
+.stat__content h5 {
+  font-size: 1.0666666667rem;
+  line-height: 1.8666666667rem;
+  color: #37546d;
+  font-weight: 400;
 }
 
 .stat__number h6 {
   font-size: 3.7333333333rem;
   line-height: 4.8rem;
   color: #b9416f;
-  font-family: "Public Sans", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .about__image {
