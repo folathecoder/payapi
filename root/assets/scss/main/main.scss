@@ -1201,9 +1201,15 @@ input[type="submit"] {
         padding-top: rem(50);
         max-width: rem(550);
         text-align: center;
+        margin: 0 auto;
         
         @include media-query(tablet-mini) {
             padding-top: rem(60);
+
+        }
+        @include media-query(tablet) {
+            margin: 0;
+            text-align: left;
 
         }
     
@@ -1211,7 +1217,6 @@ input[type="submit"] {
             max-width: rem(870);
             padding-top: rem(70);
             padding-right: rem(180);
-            text-align: left;
         }
     
         h1 {
@@ -1236,13 +1241,23 @@ input[type="submit"] {
         flex-direction: column;
         margin: rem(50) rem(0);
 
+        @include media-query(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include media-query(desktop) {
+            flex-direction: row;
+            margin-top: rem(70);
+        }
+
         & > * {
             flex: 1;
         }
     }
 
     &__form {
-        margin: rem(0) rem(0);
+        max-width: rem(445);
+        margin: rem(0) auto;
     }
 
     .btn {
@@ -1268,12 +1283,29 @@ input[type="submit"] {
     &__logos {
         margin-top: rem(70);
         text-align: center;
+
+        @include media-query(tablet) {
+            text-align: left;
+        }
+        @include media-query(desktop) {
+            transform: translateX(rem(80));
+        }
     }
 
 }
 .partners__heading {
     margin-bottom: rem(30);
-    font-weight: $weight-regular;
+    max-width: rem(500);
+    margin: 0 auto rem(10) auto;
+
+    h2 {
+        font-size: rem(24);
+        line-height: rem(32);
+        font-weight: $weight-regular;
+    }
+    @include media-query(tablet) {
+        padding-left: rem(10);
+    }
 }
 .contact__form input[type=text],
 .contact__form input[type=email] {
