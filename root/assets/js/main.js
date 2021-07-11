@@ -28,6 +28,7 @@ const CloseMobileMenu = function(e) {
     mobileMenu.classList.remove('menu-active');
     body.style.overflow = 'auto';
     htmlDom.style.overflowY = 'auto';
+    body.style.overflowX = 'hidden';
     htmlDom.style.overflowX = 'hidden';
     overlay.style.display = 'none';
 }
