@@ -49,7 +49,7 @@
     <header class="header">
       <div class="header__inner">
         <div class="header__logo">
-          <a href="./index.html">
+          <a href="index.html">
             <img src="./assets/img/universal/desktop/logo.svg" alt="PayAPI Logo">
           </a>
         </div>
@@ -94,18 +94,22 @@
                 <input type="text" name="name" id="name" placeholder="Name">
               </div>
               <div class="email__field">
+                <label for="email" class="sr-only">Enter Your Email Address (Required)</label>
                 <input type="email" name="email" id="email__contact" placeholder="Email Address">
                 <p class="email__empty">This field can't be empty</p>
                 <p class="email__invalid">Invalid email ... (e.g. "john@example.com")</p>
                 <p class="email__valid">Valid email</p>
               </div>
               <div>
+                <label for="company" class="sr-only">Enter Your Company Name</label>
                 <input type="text" name="company" id="company" placeholder="Company Name">
               </div>
               <div>
+                <label for="title" class="sr-only">Enter Your Title (Job Position)</label>
                 <input type="text" name="title" id="title" placeholder="Title">
               </div>
               <div>
+                <label for="message" class="sr-only">Enter Your Message</label>
                 <input type="text" name="message" id="message" placeholder="Message">
               </div>
               <div class="contact__check">
@@ -127,12 +131,12 @@
             </div>
             <div class="partners__logos">
               <div class="partners__logos-inner">
-                <div class="parters__logo"><img src="./assets/img/universal/desktop/tesla-c.svg" alt=""></div>
-                <div class="parters__logo"><img src="./assets/img/universal/desktop/microsoft-c.svg" alt=""></div>
-                <div class="parters__logo"><img src="./assets/img/universal/desktop/hewlett-packard-c.svg" alt=""></div>
-                <div class="parters__logo"><img src="./assets/img/universal/desktop/oracle-c.svg" alt=""></div>
-                <div class="parters__logo"><img src="./assets/img/universal/desktop/google-c.svg" alt=""></div>
-                <div class="parters__logo"><img src="./assets/img/universal/desktop/nvidia-c.svg" alt=""></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/tesla-c.svg" alt="tesla logo"></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/microsoft-c.svg" alt="microsoft logo"></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/hewlett-packard-c.svg" alt="hewlett packard logo"></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/oracle-c.svg" alt="oracle logo"></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/google-c.svg" alt="google logo"></div>
+                <div class="parters__logo"><img src="./assets/img/universal/desktop/nvidia-c.svg" alt="nvidia logo"></div>
               </div>
             </div>
           </div>
@@ -150,6 +154,7 @@
       </div>
       <div class="cta__form-container">
         <form name="contact" method="POST" data-netlify="true" class="main-form cta__form">
+          <label for="email" class="sr-only">Enter Your Email Address</label>
           <input type="email" name="email" id="email" placeholder="Enter email address">
           <input type="submit" value="Schedule a Demo" class="form-btn">
         </form>

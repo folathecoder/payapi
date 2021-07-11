@@ -29,6 +29,20 @@ picture {
   display: block;
 }
 
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -359,6 +373,12 @@ h3 {
     background-position: 43.3333333333rem -20rem;
   }
 }
+@media screen and (min-width: 200px) {
+  .home__header {
+    background-size: 52rem auto;
+    background-position: 166.6666666667rem -20rem;
+  }
+}
 
 .hero {
   max-width: 100%;
@@ -534,6 +554,12 @@ input[type=submit]:hover {
     background-position: -16.6666666667rem -23.3333333333rem;
   }
 }
+@media screen and (min-width: 200px) {
+  .partners {
+    background-size: 52rem auto;
+    background-position: 86.6666666667rem -23.3333333333rem;
+  }
+}
 .partners__inner {
   max-width: 74rem;
   margin: 0rem auto;
@@ -627,6 +653,11 @@ input[type=submit]:hover {
   .features__container {
     background-size: 43.3333333333rem auto;
     background-position: 66.6666666667rem 23.3333333333rem;
+  }
+}
+@media screen and (min-width: 200px) {
+  .features__container {
+    background-position: 180rem 23.3333333333rem;
   }
 }
 
@@ -821,6 +852,11 @@ input[type=submit]:hover {
   .main-header-container {
     background-size: 46.6666666667rem auto;
     background-position: 50rem -30rem;
+  }
+}
+@media screen and (min-width: 200px) {
+  .main-header-container {
+    background-position: 166.6666666667rem -30rem;
   }
 }
 
@@ -1102,8 +1138,9 @@ input[type=submit]:hover {
 }
 
 .about__image {
-  max-width: 100%;
+  max-width: 89.9333333333rem;
   min-height: 0rem;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1112,6 +1149,11 @@ input[type=submit]:hover {
     background-size: 52rem auto;
     background-position: -40rem 40rem;
     background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 200px) {
+  .bg__wrapper {
+    background-position: 73.3333333333rem 40rem;
   }
 }
 
@@ -1347,6 +1389,11 @@ input[type=checkbox]:active {
     background-position: 66.6666666667rem -6.6666666667rem;
   }
 }
+@media screen and (min-width: 200px) {
+  .footer {
+    background-position: 173.3333333333rem -6.6666666667rem;
+  }
+}
 .footer__inner {
   display: flex;
   flex-direction: column;
@@ -1429,27 +1476,4 @@ input[type=checkbox]:active {
   .foot-2 {
     flex: 5;
   }
-}
-
-.scroll-up {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 100%;
-  background-color: #b9416f;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  margin: 1rem;
-  box-shadow: 0rem 0.1333333333rem 0.3333333333rem rgba(0, 0, 0, 0.199);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-}
-.scroll-up i {
-  font-size: 1.6666666667rem;
-  color: #FBFCFE;
-}
-.scroll-up:hover {
-  background-color: #DA6D97;
-  transition: all 0.5s linear;
 }/*# sourceMappingURL=main.css.map */

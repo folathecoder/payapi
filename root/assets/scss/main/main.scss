@@ -8,7 +8,13 @@
 
 // ===============  MEDIA QUERIES
 @mixin media-query ($size) {
-    @if $size == desktop {
+    @if $size == desktop-mega {
+        @media screen and (min-width: 200px) {
+            @content;
+        }
+    }
+
+    @else if $size == desktop {
         @media screen and (min-width: 1200px) {
             @content;
         }
@@ -98,6 +104,20 @@ picture {
   max-width: 100%;
   display: block;
 }
+
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
 
 // =============== MAKE ANIMATION OPTIONAL FOR USERS
 @media (prefers-reduced-motion: reduce) {
@@ -206,19 +226,6 @@ h3 {
     margin-right: rem(20);
     z-index: 100;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ===============  HEADER SECTION
 .header-container {
@@ -413,7 +420,6 @@ h3 {
 // =============== HERO SECTION
 
 .home__header {
-    // background-color: red;
     background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
     background-size: rem(500) auto;
     background-position: center rem(-300);
@@ -427,6 +433,11 @@ h3 {
     @include media-query(tablet) {
         background-size: rem(780) auto;
         background-position: rem(650) rem(-300);
+    }
+
+    @include media-query(desktop-mega) {
+        background-size: rem(780) auto;
+        background-position: rem(2500) rem(-300);
     }
 }
 
@@ -602,6 +613,10 @@ input[type="submit"] {
         background-size: rem(780) auto;
         background-position: rem(-250) rem(-350);
     }
+    @include media-query(desktop-mega) {
+        background-size: rem(780) auto;
+        background-position: rem(1300) rem(-350);
+    }
 
     &__inner {
         // background-color: #fff;
@@ -705,6 +720,9 @@ input[type="submit"] {
     @include media-query(desktop) {
         background-size: rem(650) auto;
         background-position: rem(1000) rem(350);
+    }
+    @include media-query(desktop-mega) {
+        background-position: rem(2700) rem(350);
     }
 }
 
@@ -905,6 +923,10 @@ input[type="submit"] {
     @include media-query(desktop) {
         background-size: rem(700) auto;
         background-position: rem(750) rem(-450);
+    }
+
+    @include media-query(desktop-mega) {
+        background-position: rem(2500) rem(-450);
     }
 }
 .pricing {
@@ -1192,8 +1214,9 @@ input[type="submit"] {
     }
 }
 .about__image {
-    max-width: 100%;
+    max-width: rem(1349);
     min-height: rem(0);
+    margin: 0 auto;
 }
 
 .bg__wrapper {
@@ -1202,6 +1225,10 @@ input[type="submit"] {
         background-size: rem(780) auto;
         background-position: rem(-600) rem(600);
         background-repeat: no-repeat;
+    }
+
+    @include media-query(desktop-mega) {
+        background-position: rem(1100) rem(600);
     }
 }
 
@@ -1487,6 +1514,9 @@ input[type=checkbox] {
     @include media-query(desktop) {
         background-position: rem(1000) rem(-100);
     }
+    @include media-query(desktop-mega) {
+        background-position: rem(2600) rem(-100);
+    }
 
 
     &__inner {
@@ -1565,33 +1595,5 @@ input[type=checkbox] {
     }
     @include media-query(tablet) {
         flex: 5;
-    }
-}
-
-
-//=============== SCROLL UP BUTTON
-
-.scroll-up {
-    height: rem(45);
-    width: rem(45);
-    border-radius: 100%;
-    background-color: $color-pry-100;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    margin: rem(15);
-    box-shadow: $shadow-btn;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-
-    i {
-        font-size: rem(25);
-        color: $color-sec-800;
-    }
-
-    &:hover {
-        background-color: #DA6D97;
-        transition: all 0.5s linear;
     }
 }
