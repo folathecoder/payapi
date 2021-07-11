@@ -435,10 +435,6 @@ h3 {
         background-position: rem(650) rem(-300);
     }
 
-    @include media-query(desktop-mega) {
-        background-size: rem(780) auto;
-        background-position: rem(2500) rem(-300);
-    }
 }
 
 .hero {
@@ -613,13 +609,8 @@ input[type="submit"] {
         background-size: rem(780) auto;
         background-position: rem(-250) rem(-350);
     }
-    @include media-query(desktop-mega) {
-        background-size: rem(780) auto;
-        background-position: rem(1300) rem(-350);
-    }
 
     &__inner {
-        // background-color: #fff;
         max-width: $max-width;
         margin: rem(0) auto;
         display: flex;
@@ -720,9 +711,6 @@ input[type="submit"] {
     @include media-query(desktop) {
         background-size: rem(650) auto;
         background-position: rem(1000) rem(350);
-    }
-    @include media-query(desktop-mega) {
-        background-position: rem(2700) rem(350);
     }
 }
 
@@ -923,10 +911,6 @@ input[type="submit"] {
     @include media-query(desktop) {
         background-size: rem(700) auto;
         background-position: rem(750) rem(-450);
-    }
-
-    @include media-query(desktop-mega) {
-        background-position: rem(2500) rem(-450);
     }
 }
 .pricing {
@@ -1227,9 +1211,6 @@ input[type="submit"] {
         background-repeat: no-repeat;
     }
 
-    @include media-query(desktop-mega) {
-        background-position: rem(1100) rem(600);
-    }
 }
 
 
@@ -1447,49 +1428,6 @@ input[type=checkbox] {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //=============== FOOTER SECTION
 
 .footer {
@@ -1513,9 +1451,6 @@ input[type=checkbox] {
 
     @include media-query(desktop) {
         background-position: rem(1000) rem(-100);
-    }
-    @include media-query(desktop-mega) {
-        background-position: rem(2600) rem(-100);
     }
 
 
