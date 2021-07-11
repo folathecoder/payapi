@@ -54,6 +54,7 @@ $color-sec-500: #36536B;
 $color-sec-600: #DA6D97;
 $color-sec-700: #1B262F;
 $color-sec-800: #FBFCFE;
+$color-sec-900: #FF0000;
 $shadow-btn: rem(0) rem(2) rem(5) rgba(0, 0, 0, 0.199);
 
 // =======================  TYPOGRAPHY
@@ -203,6 +204,7 @@ h3 {
     right: 0;
     margin-top: rem(100);
     margin-right: rem(20);
+    z-index: 100;
 }
 
 
@@ -1343,6 +1345,10 @@ input[type="submit"] {
     &:focus {
         outline: none;
     }
+
+    &:active {
+        border-color: $color-sec-500;
+    }
 }
 
 #message {
@@ -1369,8 +1375,50 @@ input[type=checkbox] {
     }
 }
 
+.email__field {
 
+    p {
+        font-size: rem(13);
+        color: $color-sec-900;
+        transition: 0.3s linear;
+        transform: translateX(rem(40));
+    }
+}
 
+.email__error {
+    input[type=email] {
+        border-color: $color-sec-900;
+        color: $color-sec-900;
+    }
+    p {
+        transition: 0.3s linear;
+        transform: translateX(rem(0));
+    }
+}
+
+.email__empty {
+    display: none;
+}
+
+.email__invalid {
+    display: none;
+}
+
+.email__valid {
+    display: none;
+}
+
+.email__error-cleared {
+    input[type=email] {
+        border-color: rgb(4, 110, 4);
+        color: $color-sec-500;
+    }
+    p {
+        color: rgb(4, 110, 4);
+        transition: 0.3s linear;
+        transform: translateX(rem(0));
+    }
+}
 
 
 

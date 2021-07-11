@@ -93,8 +93,11 @@
               <div>
                 <input type="text" name="name" id="name" placeholder="Name">
               </div>
-              <div>
-                <input type="email" name="email" id="email" placeholder="Email Address">
+              <div class="email__field">
+                <input type="email" name="email" id="email__contact" placeholder="Email Address">
+                <p class="email__empty">This field can't be empty</p>
+                <p class="email__invalid">Invalid email ... (e.g. "john@example.com")</p>
+                <p class="email__valid">Valid email</p>
               </div>
               <div>
                 <input type="text" name="company" id="company" placeholder="Company Name">
@@ -114,7 +117,7 @@
                 </div>
               </div>
               <div>
-                <input type="submit" value="Submit" class="btn">
+                <input type="submit" value="Submit" class="btn" id="contact__btn">
               </div>
             </form>
           </div>

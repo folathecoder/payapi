@@ -132,6 +132,7 @@ h3 {
   right: 0;
   margin-top: 6.6666666667rem;
   margin-right: 1.3333333333rem;
+  z-index: 100;
 }
 
 .header-container {
@@ -1253,6 +1254,10 @@ input[type=submit]:hover {
 .contact__form input[type=email]:focus {
   outline: none;
 }
+.contact__form input[type=text]:active,
+.contact__form input[type=email]:active {
+  border-color: #36536B;
+}
 
 #message {
   max-width: 100%;
@@ -1276,6 +1281,44 @@ input[type=checkbox]:checked {
 }
 input[type=checkbox]:active {
   background-color: red;
+}
+
+.email__field p {
+  font-size: 0.8666666667rem;
+  color: #FF0000;
+  transition: 0.3s linear;
+  transform: translateX(2.6666666667rem);
+}
+
+.email__error input[type=email] {
+  border-color: #FF0000;
+  color: #FF0000;
+}
+.email__error p {
+  transition: 0.3s linear;
+  transform: translateX(0rem);
+}
+
+.email__empty {
+  display: none;
+}
+
+.email__invalid {
+  display: none;
+}
+
+.email__valid {
+  display: none;
+}
+
+.email__error-cleared input[type=email] {
+  border-color: #046e04;
+  color: #36536B;
+}
+.email__error-cleared p {
+  color: #046e04;
+  transition: 0.3s linear;
+  transform: translateX(0rem);
 }
 
 .footer {

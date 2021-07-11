@@ -87,3 +87,53 @@ planBtn.forEach( btn => {
 console.log(planBtn);
 
 
+
+//TODO: Contact Page Email Validation
+
+const emailField = document.querySelector('.email__field');
+const emailEmpty = document.querySelector('.email__empty');
+const emailInvalid = document.querySelector('.email__invalid');
+const emailValid = document.querySelector('.email__valid');
+const contactEmail = document.querySelector('#email__contact');
+const contactBtn = document.querySelector('.contact__btn');
+
+console.log(emailValid);
+
+//TODO: Email Field Empty When Submit Button Is Clicked
+
+// ==== Add email__error to email__field
+// ==== display block on email__empty
+
+//TODO: Email Format Is Wrong When The User Is Typing
+
+// ==== Add email__error to email__field
+// ==== display block on email__invalid
+
+
+const validateContactEmail = function() {
+    let mail = contactEmail.value;
+    let regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+    if(regx.text(mail)) {
+        emailField.classList.add('.email__error-cleared');
+        emailValid.style.display = 'block';
+
+        emailField.classList.remove('.email__error');
+        emailInvalid.style.display = 'none';
+        
+        return true;
+    }
+    else {
+        emailField.classList.remove('.email__error-cleared');
+        emailValid.style.display = 'none';
+
+        emailField.classList.add('.email__error');
+        emailInvalid.style.display = 'block';
+        return false;
+    }
+}
+
+contactBtn.addEventListener('click', (e) => {
+    preventDefault();
+    validateContactEmail();
+});
