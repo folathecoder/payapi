@@ -1,0 +1,107 @@
+//=============== FOOTER SECTION
+
+.footer {
+    background-color: $color-sec-700;
+    padding: rem(30) rem(0);
+    background-image: url(../../img/universal/desktop/bg-pattern-circle.svg);
+    background-size: rem(800) auto;
+    background-position: center rem(150);
+    background-repeat: no-repeat;
+
+    @include media-query(large-mobile) {
+        padding: rem(10) rem(0);    
+        display: flex;
+        background-size: rem(500) auto;
+        background-position: rem(500) rem(-100);
+    }
+
+    @include media-query(tablet) {
+        background-position: rem(700) rem(-100);
+    }
+
+    @include media-query(desktop) {
+        background-position: rem(1000) rem(-100);
+    }
+    @include media-query(desktop-mega) {
+        background-image: none;
+    }
+
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: rem(1110);
+        margin: rem(0) auto;
+        padding: rem(0) rem(10);
+
+        @include media-query(large-mobile) {
+            flex: 1;
+            flex-direction: row;
+        }
+    }
+}
+
+.footer__logo {
+    padding: rem(10) rem(0);
+
+    @include media-query(large-mobile) {
+        flex: 1;
+        justify-content: right;
+    }
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(13) rem(0);
+
+    @include media-query(large-mobile) {
+        flex-direction: row;
+        flex: 1;
+    }
+
+    &-item {
+        padding: rem(7) rem(0);
+        @include media-query(large-mobile) {
+            margin: rem(0) rem(20);
+        }
+
+        a {
+            color: $color-sec-800;
+        }
+        a:hover {
+            color: saturate($color-sec-800, $amount: 50);
+        }
+    }
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    padding: rem(13) rem(0);
+
+    @include media-query(large-mobile) {
+        flex: 1;
+        justify-content: right;
+    }
+    & > * {
+        margin: rem(0) rem(10);
+    }
+}
+
+.footer__inner-section {
+    @include media-query(large-mobile) {
+        flex: 1;
+    }
+}
+
+.foot-2 {
+    @include media-query(large-mobile) {
+        flex: 2;
+    }
+    @include media-query(tablet) {
+        flex: 5;
+    }
+}

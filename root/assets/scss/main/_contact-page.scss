@@ -1,0 +1,213 @@
+// ====================================== CONTACT PAGE 
+
+.contact {
+    max-width: 100%;
+    min-height: rem(500);
+
+    &__inner {
+        max-width: $max-width;
+        margin: 0 auto;
+    }
+    
+    &__header {
+        padding-top: rem(50);
+        max-width: rem(550);
+        text-align: center;
+        margin: 0 auto;
+        
+        @include media-query(tablet-mini) {
+            padding-top: rem(60);
+
+        }
+        @include media-query(tablet) {
+            margin: 0;
+            text-align: left;
+
+        }
+    
+        @include media-query(desktop) {
+            max-width: rem(870);
+            padding-top: rem(70);
+            padding-right: rem(180);
+        }
+    
+        h1 {
+            font-size: rem(32);
+            line-height: rem(36);
+    
+            @include media-query(tablet-mini) {
+                font-size: rem(48);
+                line-height: rem(48);
+            }
+    
+            @include media-query(desktop) {
+                font-size: rem(56);
+                line-height: rem(56);
+            }
+        }
+    }
+
+    &__content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: rem(50) rem(0);
+
+        @include media-query(tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        @include media-query(desktop) {
+            flex-direction: row;
+            margin-top: rem(70);
+        }
+
+        & > * {
+            flex: 1;
+        }
+    }
+
+    &__form {
+        max-width: rem(445);
+        margin: rem(0) auto;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: rem(2) solid $color-sec-700;
+        color: $color-sec-700;
+        box-shadow: none;
+        padding-left: rem(45);
+        padding-right: rem(45);
+    }
+    .btn:hover {
+        background-color: $color-sec-700;
+        color: $color-bg;
+    }
+
+    .partners__logo {
+        img {
+            background-color: #000000;
+            fill: #0000;
+        }
+    }
+
+    &__logos {
+        margin-top: rem(70);
+        text-align: center;
+
+        @include media-query(tablet) {
+            text-align: left;
+        }
+        @include media-query(desktop) {
+            transform: translateX(rem(80));
+        }
+    }
+
+}
+.partners__heading {
+    margin-bottom: rem(30);
+    max-width: rem(500);
+    margin: 0 auto rem(10) auto;
+
+    h2 {
+        font-size: rem(24);
+        line-height: rem(32);
+        font-weight: $weight-regular;
+    }
+    @include media-query(tablet) {
+        padding-left: rem(10);
+    }
+}
+.contact__form input[type=text],
+.contact__form input[type=email] {
+    background-color: $color-bg;
+    width: 100%;
+    min-height: rem(50);
+    border-radius: rem(0);
+    margin: rem(0);
+    border: none;
+    box-shadow: none;
+    border-bottom: rem(1) solid $color-sec-500;
+    font-size: rem(14);
+    font-weight: $weight-regular;
+    padding: 0;
+    color: $color-sec-500;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        border-color: $color-sec-500;
+    }
+}
+
+#message {
+    max-width: 100%;
+    min-height: rem(100);
+}
+.contact__check {
+    display: flex;
+    margin: rem(30) rem(0);
+    
+    p {
+        font-size: rem(14);
+        line-height: rem(20);
+    }
+}
+input[type=checkbox] {
+    margin-right: rem(20);
+    
+    &:checked {
+        background-color: red;
+    }
+    &:active {
+        background-color: red;
+    }
+}
+
+.email__field {
+
+    p {
+        font-size: rem(13);
+        color: $color-sec-900;
+        transition: 0.3s linear;
+        transform: translateX(rem(40));
+    }
+}
+
+.email__error {
+    input[type=email] {
+        border-color: $color-sec-900;
+        color: $color-sec-900;
+    }
+    p {
+        transition: 0.3s linear;
+        transform: translateX(rem(0));
+    }
+}
+
+.email__empty {
+    display: none;
+}
+
+.email__invalid {
+    display: none;
+}
+
+.email__valid {
+    display: none;
+}
+
+.email__error-cleared {
+    input[type=email] {
+        border-color: rgb(4, 110, 4);
+        color: $color-sec-500;
+    }
+    p {
+        color: rgb(4, 110, 4);
+        transition: 0.3s linear;
+        transform: translateX(rem(0));
+    }
+}
