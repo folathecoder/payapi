@@ -373,6 +373,11 @@ h3 {
     background-position: 43.3333333333rem -20rem;
   }
 }
+@media screen and (min-width: 1500px) {
+  .home__header {
+    background-image: none;
+  }
+}
 
 .hero {
   max-width: 100%;
@@ -548,6 +553,11 @@ input[type=submit]:hover {
     background-position: -16.6666666667rem -23.3333333333rem;
   }
 }
+@media screen and (min-width: 1500px) {
+  .partners {
+    background-image: none;
+  }
+}
 .partners__inner {
   max-width: 74rem;
   margin: 0rem auto;
@@ -641,6 +651,11 @@ input[type=submit]:hover {
   .features__container {
     background-size: 43.3333333333rem auto;
     background-position: 66.6666666667rem 23.3333333333rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .features__container {
+    background-image: none;
   }
 }
 
@@ -835,6 +850,11 @@ input[type=submit]:hover {
   .main-header-container {
     background-size: 46.6666666667rem auto;
     background-position: 50rem -30rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .main-header-container {
+    background-image: none;
   }
 }
 
@@ -1129,6 +1149,11 @@ input[type=submit]:hover {
     background-repeat: no-repeat;
   }
 }
+@media screen and (min-width: 1500px) {
+  .bg__wrapper {
+    background-image: none;
+  }
+}
 
 .contact {
   max-width: 100%;
@@ -1360,6 +1385,11 @@ input[type=checkbox]:active {
 @media screen and (min-width: 1200px) {
   .footer {
     background-position: 66.6666666667rem -6.6666666667rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .footer {
+    background-image: none;
   }
 }
 .footer__inner {

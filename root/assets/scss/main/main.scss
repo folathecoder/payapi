@@ -8,7 +8,12 @@
 
 // ===============  MEDIA QUERIES
 @mixin media-query ($size) {
-    @if $size == desktop {
+    @if $size == desktop-mega {
+        @media screen and (min-width: 1500px) {
+            @content;
+        }
+    }
+    @else if $size == desktop {
         @media screen and (min-width: 1200px) {
             @content;
         }
@@ -428,6 +433,10 @@ h3 {
         background-size: rem(780) auto;
         background-position: rem(650) rem(-300);
     }
+    
+    @include media-query(desktop-mega) {
+        background-image: none;
+    }
 
 }
 
@@ -603,6 +612,9 @@ input[type="submit"] {
         background-size: rem(780) auto;
         background-position: rem(-250) rem(-350);
     }
+    @include media-query(desktop-mega) {
+        background-image: none;
+    }
 
     &__inner {
         max-width: $max-width;
@@ -706,6 +718,9 @@ input[type="submit"] {
         background-size: rem(650) auto;
         background-position: rem(1000) rem(350);
     }
+    @include media-query(desktop-mega) {
+        background-image: none;
+    }
 }
 
 .features {
@@ -795,11 +810,6 @@ input[type="submit"] {
 }
 
 
-
-
-
-
-
 // SERVICES SECTION
 
 .services {
@@ -817,8 +827,6 @@ input[type="submit"] {
             min-height: rem(350);
         }
     }
-
-    
 }
 
 .services__item {
@@ -905,6 +913,10 @@ input[type="submit"] {
     @include media-query(desktop) {
         background-size: rem(700) auto;
         background-position: rem(750) rem(-450);
+    }
+
+    @include media-query(desktop-mega) {
+        background-image: none;
     }
 }
 .pricing {
@@ -1204,6 +1216,9 @@ input[type="submit"] {
         background-position: rem(-600) rem(600);
         background-repeat: no-repeat;
     }
+    @include media-query(desktop-mega) {
+        background-image: none;
+    }
 
 }
 
@@ -1445,6 +1460,9 @@ input[type=checkbox] {
 
     @include media-query(desktop) {
         background-position: rem(1000) rem(-100);
+    }
+    @include media-query(desktop-mega) {
+        background-image: none;
     }
 
 
